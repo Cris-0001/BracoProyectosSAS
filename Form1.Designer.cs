@@ -101,7 +101,7 @@ namespace BracoProyectos
             // labelProduc
             // 
             this.labelProduc.AutoSize = true;
-            this.labelProduc.Location = new System.Drawing.Point(21, 96);
+            this.labelProduc.Location = new System.Drawing.Point(21, 106);
             this.labelProduc.Name = "labelProduc";
             this.labelProduc.Size = new System.Drawing.Size(73, 20);
             this.labelProduc.TabIndex = 3;
@@ -114,7 +114,7 @@ namespace BracoProyectos
             "Shelter",
             "Skid",
             "Otro"});
-            this.comboBoxProduc.Location = new System.Drawing.Point(100, 88);
+            this.comboBoxProduc.Location = new System.Drawing.Point(100, 98);
             this.comboBoxProduc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBoxProduc.Name = "comboBoxProduc";
             this.comboBoxProduc.Size = new System.Drawing.Size(136, 28);
@@ -122,7 +122,7 @@ namespace BracoProyectos
             // 
             // textBoxOT
             // 
-            this.textBoxOT.Location = new System.Drawing.Point(60, 20);
+            this.textBoxOT.Location = new System.Drawing.Point(60, 30);
             this.textBoxOT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxOT.Name = "textBoxOT";
             this.textBoxOT.Size = new System.Drawing.Size(126, 26);
@@ -131,7 +131,7 @@ namespace BracoProyectos
             // OT
             // 
             this.OT.AutoSize = true;
-            this.OT.Location = new System.Drawing.Point(21, 24);
+            this.OT.Location = new System.Drawing.Point(21, 34);
             this.OT.Name = "OT";
             this.OT.Size = new System.Drawing.Size(30, 20);
             this.OT.TabIndex = 0;
@@ -172,7 +172,7 @@ namespace BracoProyectos
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(350, 161);
+            this.dateTimePicker1.Location = new System.Drawing.Point(350, 171);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker1.TabIndex = 4;
@@ -180,7 +180,7 @@ namespace BracoProyectos
             // labelFechaInicio
             // 
             this.labelFechaInicio.AutoSize = true;
-            this.labelFechaInicio.Location = new System.Drawing.Point(230, 167);
+            this.labelFechaInicio.Location = new System.Drawing.Point(230, 177);
             this.labelFechaInicio.Name = "labelFechaInicio";
             this.labelFechaInicio.Size = new System.Drawing.Size(95, 20);
             this.labelFechaInicio.TabIndex = 5;
@@ -189,7 +189,7 @@ namespace BracoProyectos
             // labelCantFabricar
             // 
             this.labelCantFabricar.AutoSize = true;
-            this.labelCantFabricar.Location = new System.Drawing.Point(21, 167);
+            this.labelCantFabricar.Location = new System.Drawing.Point(21, 177);
             this.labelCantFabricar.Name = "labelCantFabricar";
             this.labelCantFabricar.Size = new System.Drawing.Size(73, 20);
             this.labelCantFabricar.TabIndex = 6;
@@ -197,21 +197,21 @@ namespace BracoProyectos
             // 
             // textBoxCantFabricar
             // 
-            this.textBoxCantFabricar.Location = new System.Drawing.Point(100, 161);
+            this.textBoxCantFabricar.Location = new System.Drawing.Point(100, 171);
             this.textBoxCantFabricar.Name = "textBoxCantFabricar";
             this.textBoxCantFabricar.Size = new System.Drawing.Size(86, 26);
             this.textBoxCantFabricar.TabIndex = 7;
             // 
             // textBoxOrdenCompra
             // 
-            this.textBoxOrdenCompra.Location = new System.Drawing.Point(244, 20);
+            this.textBoxOrdenCompra.Location = new System.Drawing.Point(244, 30);
             this.textBoxOrdenCompra.Name = "textBoxOrdenCompra";
             this.textBoxOrdenCompra.Size = new System.Drawing.Size(185, 26);
             this.textBoxOrdenCompra.TabIndex = 8;
             // 
             // textBoxDescripProyec
             // 
-            this.textBoxDescripProyec.Location = new System.Drawing.Point(383, 90);
+            this.textBoxDescripProyec.Location = new System.Drawing.Point(383, 100);
             this.textBoxDescripProyec.Name = "textBoxDescripProyec";
             this.textBoxDescripProyec.Size = new System.Drawing.Size(440, 26);
             this.textBoxDescripProyec.TabIndex = 9;
@@ -219,7 +219,7 @@ namespace BracoProyectos
             // labelOrdenCompra
             // 
             this.labelOrdenCompra.AutoSize = true;
-            this.labelOrdenCompra.Location = new System.Drawing.Point(206, 26);
+            this.labelOrdenCompra.Location = new System.Drawing.Point(201, 36);
             this.labelOrdenCompra.Name = "labelOrdenCompra";
             this.labelOrdenCompra.Size = new System.Drawing.Size(32, 20);
             this.labelOrdenCompra.TabIndex = 10;
@@ -228,7 +228,7 @@ namespace BracoProyectos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(265, 95);
+            this.label1.Location = new System.Drawing.Point(265, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 11;
@@ -237,7 +237,7 @@ namespace BracoProyectos
             // labelCliente
             // 
             this.labelCliente.AutoSize = true;
-            this.labelCliente.Location = new System.Drawing.Point(488, 24);
+            this.labelCliente.Location = new System.Drawing.Point(488, 34);
             this.labelCliente.Name = "labelCliente";
             this.labelCliente.Size = new System.Drawing.Size(58, 20);
             this.labelCliente.TabIndex = 12;
@@ -249,14 +249,14 @@ namespace BracoProyectos
             this.comboBoxCliente.Items.AddRange(new object[] {
             "Ectricol",
             "Melexa"});
-            this.comboBoxCliente.Location = new System.Drawing.Point(552, 18);
+            this.comboBoxCliente.Location = new System.Drawing.Point(552, 28);
             this.comboBoxCliente.Name = "comboBoxCliente";
             this.comboBoxCliente.Size = new System.Drawing.Size(121, 28);
             this.comboBoxCliente.TabIndex = 13;
             // 
             // buttonCrear
             // 
-            this.buttonCrear.Location = new System.Drawing.Point(25, 235);
+            this.buttonCrear.Location = new System.Drawing.Point(25, 245);
             this.buttonCrear.Name = "buttonCrear";
             this.buttonCrear.Size = new System.Drawing.Size(125, 54);
             this.buttonCrear.TabIndex = 14;
@@ -265,7 +265,7 @@ namespace BracoProyectos
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(176, 235);
+            this.buttonBuscar.Location = new System.Drawing.Point(176, 245);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(125, 54);
             this.buttonBuscar.TabIndex = 15;
@@ -274,7 +274,7 @@ namespace BracoProyectos
             // 
             // buttonActualizar
             // 
-            this.buttonActualizar.Location = new System.Drawing.Point(327, 235);
+            this.buttonActualizar.Location = new System.Drawing.Point(327, 245);
             this.buttonActualizar.Name = "buttonActualizar";
             this.buttonActualizar.Size = new System.Drawing.Size(125, 54);
             this.buttonActualizar.TabIndex = 16;
@@ -283,7 +283,7 @@ namespace BracoProyectos
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(478, 235);
+            this.buttonEliminar.Location = new System.Drawing.Point(478, 245);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(125, 54);
             this.buttonEliminar.TabIndex = 17;

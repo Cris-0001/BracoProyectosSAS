@@ -1,0 +1,10 @@
+C:\Users\CRIST\source\repos\BracoProyectos\bin\Debug\BracoProyectos.exe.config
+C:\Users\CRIST\source\repos\BracoProyectos\bin\Debug\BracoProyectos.exe
+C:\Users\CRIST\source\repos\BracoProyectos\bin\Debug\BracoProyectos.pdb
+C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.csproj.AssemblyReference.cache
+C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.Properties.Resources.resources
+C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.csproj.GenerateResource.cache
+C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.csproj.CoreCompileInputs.cache
+C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.exe
+C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.pdb
+C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.BracoProyectos.resources

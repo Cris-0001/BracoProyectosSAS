@@ -8,3 +8,13 @@ C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.csproj.CoreC
 C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.exe
 C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.pdb
 C:\Users\CRIST\source\repos\BracoProyectos\obj\Debug\BracoProyectos.BracoProyectos.resources
+C:\Users\HP\source\repos\BracoProyectosSAS\bin\Debug\BracoProyectos.exe.config
+C:\Users\HP\source\repos\BracoProyectosSAS\bin\Debug\BracoProyectos.exe
+C:\Users\HP\source\repos\BracoProyectosSAS\bin\Debug\BracoProyectos.pdb
+C:\Users\HP\source\repos\BracoProyectosSAS\obj\Debug\BracoProyectos.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\BracoProyectosSAS\obj\Debug\BracoProyectos.BracoProyectos.resources
+C:\Users\HP\source\repos\BracoProyectosSAS\obj\Debug\BracoProyectos.Properties.Resources.resources
+C:\Users\HP\source\repos\BracoProyectosSAS\obj\Debug\BracoProyectos.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\BracoProyectosSAS\obj\Debug\BracoProyectos.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\BracoProyectosSAS\obj\Debug\BracoProyectos.exe
+C:\Users\HP\source\repos\BracoProyectosSAS\obj\Debug\BracoProyectos.pdb

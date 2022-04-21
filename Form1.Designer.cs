@@ -59,9 +59,18 @@ namespace BracoProyectos
             this.buttonIngresoInsumo = new System.Windows.Forms.Button();
             this.labelFacturaInsumo = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.labelCodigoInsumo = new System.Windows.Forms.Label();
+            this.textBoxCodigInsumo = new System.Windows.Forms.TextBox();
+            this.labelCodInsumCrear = new System.Windows.Forms.Label();
+            this.textBoxCodInsumCrear = new System.Windows.Forms.TextBox();
             this.tabControlProyecto.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlProyecto
@@ -268,13 +277,7 @@ namespace BracoProyectos
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.labelFacturaInsumo);
-            this.tabPage2.Controls.Add(this.buttonIngresoInsumo);
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.labelProveedor);
-            this.tabPage2.Controls.Add(this.comboBoxNomInsumo);
-            this.tabPage2.Controls.Add(this.labelNomInsumo);
+            this.tabPage2.Controls.Add(this.splitContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
@@ -308,7 +311,7 @@ namespace BracoProyectos
             // labelNomInsumo
             // 
             this.labelNomInsumo.AutoSize = true;
-            this.labelNomInsumo.Location = new System.Drawing.Point(22, 35);
+            this.labelNomInsumo.Location = new System.Drawing.Point(15, 61);
             this.labelNomInsumo.Name = "labelNomInsumo";
             this.labelNomInsumo.Size = new System.Drawing.Size(62, 20);
             this.labelNomInsumo.TabIndex = 0;
@@ -317,7 +320,7 @@ namespace BracoProyectos
             // comboBoxNomInsumo
             // 
             this.comboBoxNomInsumo.FormattingEnabled = true;
-            this.comboBoxNomInsumo.Location = new System.Drawing.Point(90, 32);
+            this.comboBoxNomInsumo.Location = new System.Drawing.Point(83, 58);
             this.comboBoxNomInsumo.Name = "comboBoxNomInsumo";
             this.comboBoxNomInsumo.Size = new System.Drawing.Size(330, 28);
             this.comboBoxNomInsumo.TabIndex = 1;
@@ -325,7 +328,7 @@ namespace BracoProyectos
             // labelProveedor
             // 
             this.labelProveedor.AutoSize = true;
-            this.labelProveedor.Location = new System.Drawing.Point(22, 97);
+            this.labelProveedor.Location = new System.Drawing.Point(15, 115);
             this.labelProveedor.Name = "labelProveedor";
             this.labelProveedor.Size = new System.Drawing.Size(81, 20);
             this.labelProveedor.TabIndex = 2;
@@ -334,14 +337,14 @@ namespace BracoProyectos
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 89);
+            this.comboBox1.Location = new System.Drawing.Point(102, 115);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(310, 28);
             this.comboBox1.TabIndex = 3;
             // 
             // buttonIngresoInsumo
             // 
-            this.buttonIngresoInsumo.Location = new System.Drawing.Point(17, 278);
+            this.buttonIngresoInsumo.Location = new System.Drawing.Point(19, 261);
             this.buttonIngresoInsumo.Name = "buttonIngresoInsumo";
             this.buttonIngresoInsumo.Size = new System.Drawing.Size(125, 54);
             this.buttonIngresoInsumo.TabIndex = 4;
@@ -351,7 +354,7 @@ namespace BracoProyectos
             // labelFacturaInsumo
             // 
             this.labelFacturaInsumo.AutoSize = true;
-            this.labelFacturaInsumo.Location = new System.Drawing.Point(26, 144);
+            this.labelFacturaInsumo.Location = new System.Drawing.Point(15, 176);
             this.labelFacturaInsumo.Name = "labelFacturaInsumo";
             this.labelFacturaInsumo.Size = new System.Drawing.Size(64, 20);
             this.labelFacturaInsumo.TabIndex = 5;
@@ -359,10 +362,67 @@ namespace BracoProyectos
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 144);
+            this.textBox1.Location = new System.Drawing.Point(85, 170);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 26);
+            this.textBox1.Size = new System.Drawing.Size(328, 26);
             this.textBox1.TabIndex = 6;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(3, 7);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.textBoxCodInsumCrear);
+            this.splitContainer1.Panel1.Controls.Add(this.labelCodInsumCrear);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.textBoxCodigInsumo);
+            this.splitContainer1.Panel2.Controls.Add(this.labelCodigoInsumo);
+            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.labelNomInsumo);
+            this.splitContainer1.Panel2.Controls.Add(this.labelFacturaInsumo);
+            this.splitContainer1.Panel2.Controls.Add(this.comboBoxNomInsumo);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonIngresoInsumo);
+            this.splitContainer1.Panel2.Controls.Add(this.labelProveedor);
+            this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
+            this.splitContainer1.Size = new System.Drawing.Size(859, 338);
+            this.splitContainer1.SplitterDistance = 424;
+            this.splitContainer1.TabIndex = 7;
+            // 
+            // labelCodigoInsumo
+            // 
+            this.labelCodigoInsumo.AutoSize = true;
+            this.labelCodigoInsumo.Location = new System.Drawing.Point(15, 17);
+            this.labelCodigoInsumo.Name = "labelCodigoInsumo";
+            this.labelCodigoInsumo.Size = new System.Drawing.Size(116, 20);
+            this.labelCodigoInsumo.TabIndex = 7;
+            this.labelCodigoInsumo.Text = "Codigo Insumo";
+            // 
+            // textBoxCodigInsumo
+            // 
+            this.textBoxCodigInsumo.Location = new System.Drawing.Point(142, 14);
+            this.textBoxCodigInsumo.Name = "textBoxCodigInsumo";
+            this.textBoxCodigInsumo.Size = new System.Drawing.Size(270, 26);
+            this.textBoxCodigInsumo.TabIndex = 8;
+            // 
+            // labelCodInsumCrear
+            // 
+            this.labelCodInsumCrear.AutoSize = true;
+            this.labelCodInsumCrear.Location = new System.Drawing.Point(14, 17);
+            this.labelCodInsumCrear.Name = "labelCodInsumCrear";
+            this.labelCodInsumCrear.Size = new System.Drawing.Size(116, 20);
+            this.labelCodInsumCrear.TabIndex = 0;
+            this.labelCodInsumCrear.Text = "Codigo Inusmo";
+            // 
+            // textBoxCodInsumCrear
+            // 
+            this.textBoxCodInsumCrear.Location = new System.Drawing.Point(137, 14);
+            this.textBoxCodInsumCrear.Name = "textBoxCodInsumCrear";
+            this.textBoxCodInsumCrear.Size = new System.Drawing.Size(274, 26);
+            this.textBoxCodInsumCrear.TabIndex = 1;
             // 
             // BracoProyectos
             // 
@@ -378,7 +438,12 @@ namespace BracoProyectos
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -415,6 +480,11 @@ namespace BracoProyectos
         private System.Windows.Forms.Button buttonIngresoInsumo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label labelFacturaInsumo;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TextBox textBoxCodigInsumo;
+        private System.Windows.Forms.Label labelCodigoInsumo;
+        private System.Windows.Forms.TextBox textBoxCodInsumCrear;
+        private System.Windows.Forms.Label labelCodInsumCrear;
     }
 }
 

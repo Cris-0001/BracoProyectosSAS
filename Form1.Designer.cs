@@ -52,25 +52,29 @@ namespace BracoProyectos
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.labelNomInsumo = new System.Windows.Forms.Label();
-            this.comboBoxNomInsumo = new System.Windows.Forms.ComboBox();
-            this.labelProveedor = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelProveedor = new System.Windows.Forms.Label();
             this.buttonIngresoInsumo = new System.Windows.Forms.Button();
+            this.comboBoxNomInsumo = new System.Windows.Forms.ComboBox();
             this.labelFacturaInsumo = new System.Windows.Forms.Label();
+            this.labelNomInsumo = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.labelCodigoInsumo = new System.Windows.Forms.Label();
             this.textBoxCodigInsumo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.labelCodInsumCrear = new System.Windows.Forms.Label();
             this.textBoxCodInsumCrear = new System.Windows.Forms.TextBox();
+            this.labelInsumoCrear = new System.Windows.Forms.Label();
+            this.labelCrearInsumo = new System.Windows.Forms.Label();
+            this.labelProveeCrear = new System.Windows.Forms.Label();
+            this.textBoxCrearInsumo = new System.Windows.Forms.TextBox();
+            this.textBoxCrearProvee = new System.Windows.Forms.TextBox();
+            this.buttonCrearInsumo = new System.Windows.Forms.Button();
+            this.buttonEditInsum = new System.Windows.Forms.Button();
+            this.buttonBuscInsumo = new System.Windows.Forms.Button();
             this.tabControlProyecto.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlProyecto
@@ -83,7 +87,7 @@ namespace BracoProyectos
             this.tabControlProyecto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControlProyecto.Name = "tabControlProyecto";
             this.tabControlProyecto.SelectedIndex = 0;
-            this.tabControlProyecto.Size = new System.Drawing.Size(870, 385);
+            this.tabControlProyecto.Size = new System.Drawing.Size(870, 415);
             this.tabControlProyecto.TabIndex = 0;
             // 
             // tabPage1
@@ -277,15 +281,35 @@ namespace BracoProyectos
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.splitContainer1);
+            this.tabPage2.Controls.Add(this.buttonBuscInsumo);
+            this.tabPage2.Controls.Add(this.buttonEditInsum);
+            this.tabPage2.Controls.Add(this.buttonCrearInsumo);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.textBoxCrearProvee);
+            this.tabPage2.Controls.Add(this.textBoxCodigInsumo);
+            this.tabPage2.Controls.Add(this.textBoxCrearInsumo);
+            this.tabPage2.Controls.Add(this.labelProveeCrear);
+            this.tabPage2.Controls.Add(this.labelCodigoInsumo);
+            this.tabPage2.Controls.Add(this.labelCrearInsumo);
+            this.tabPage2.Controls.Add(this.labelInsumoCrear);
+            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.textBoxCodInsumCrear);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.labelCodInsumCrear);
+            this.tabPage2.Controls.Add(this.labelProveedor);
+            this.tabPage2.Controls.Add(this.labelNomInsumo);
+            this.tabPage2.Controls.Add(this.buttonIngresoInsumo);
+            this.tabPage2.Controls.Add(this.labelFacturaInsumo);
+            this.tabPage2.Controls.Add(this.comboBoxNomInsumo);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage2.Size = new System.Drawing.Size(862, 352);
+            this.tabPage2.Size = new System.Drawing.Size(862, 382);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ingreso Insumos";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // tabPage3
             // 
@@ -293,7 +317,7 @@ namespace BracoProyectos
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage3.Size = new System.Drawing.Size(872, 509);
+            this.tabPage3.Size = new System.Drawing.Size(862, 352);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Ingreso EPP";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -304,98 +328,73 @@ namespace BracoProyectos
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(872, 509);
+            this.tabPage4.Size = new System.Drawing.Size(862, 352);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Personal";
             // 
-            // labelNomInsumo
+            // comboBox1
             // 
-            this.labelNomInsumo.AutoSize = true;
-            this.labelNomInsumo.Location = new System.Drawing.Point(15, 61);
-            this.labelNomInsumo.Name = "labelNomInsumo";
-            this.labelNomInsumo.Size = new System.Drawing.Size(62, 20);
-            this.labelNomInsumo.TabIndex = 0;
-            this.labelNomInsumo.Text = "Insumo";
-            // 
-            // comboBoxNomInsumo
-            // 
-            this.comboBoxNomInsumo.FormattingEnabled = true;
-            this.comboBoxNomInsumo.Location = new System.Drawing.Point(83, 58);
-            this.comboBoxNomInsumo.Name = "comboBoxNomInsumo";
-            this.comboBoxNomInsumo.Size = new System.Drawing.Size(330, 28);
-            this.comboBoxNomInsumo.TabIndex = 1;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(532, 176);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(310, 28);
+            this.comboBox1.TabIndex = 3;
             // 
             // labelProveedor
             // 
             this.labelProveedor.AutoSize = true;
-            this.labelProveedor.Location = new System.Drawing.Point(15, 115);
+            this.labelProveedor.Location = new System.Drawing.Point(445, 176);
             this.labelProveedor.Name = "labelProveedor";
             this.labelProveedor.Size = new System.Drawing.Size(81, 20);
             this.labelProveedor.TabIndex = 2;
             this.labelProveedor.Text = "Proveedor";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(102, 115);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(310, 28);
-            this.comboBox1.TabIndex = 3;
-            // 
             // buttonIngresoInsumo
             // 
-            this.buttonIngresoInsumo.Location = new System.Drawing.Point(19, 261);
+            this.buttonIngresoInsumo.Location = new System.Drawing.Point(599, 290);
             this.buttonIngresoInsumo.Name = "buttonIngresoInsumo";
             this.buttonIngresoInsumo.Size = new System.Drawing.Size(125, 54);
             this.buttonIngresoInsumo.TabIndex = 4;
             this.buttonIngresoInsumo.Text = "Ingreso Almacen";
             this.buttonIngresoInsumo.UseVisualStyleBackColor = true;
             // 
+            // comboBoxNomInsumo
+            // 
+            this.comboBoxNomInsumo.FormattingEnabled = true;
+            this.comboBoxNomInsumo.Location = new System.Drawing.Point(513, 119);
+            this.comboBoxNomInsumo.Name = "comboBoxNomInsumo";
+            this.comboBoxNomInsumo.Size = new System.Drawing.Size(330, 28);
+            this.comboBoxNomInsumo.TabIndex = 1;
+            // 
             // labelFacturaInsumo
             // 
             this.labelFacturaInsumo.AutoSize = true;
-            this.labelFacturaInsumo.Location = new System.Drawing.Point(15, 176);
+            this.labelFacturaInsumo.Location = new System.Drawing.Point(445, 237);
             this.labelFacturaInsumo.Name = "labelFacturaInsumo";
             this.labelFacturaInsumo.Size = new System.Drawing.Size(64, 20);
             this.labelFacturaInsumo.TabIndex = 5;
             this.labelFacturaInsumo.Text = "Factura";
             // 
+            // labelNomInsumo
+            // 
+            this.labelNomInsumo.AutoSize = true;
+            this.labelNomInsumo.Location = new System.Drawing.Point(445, 127);
+            this.labelNomInsumo.Name = "labelNomInsumo";
+            this.labelNomInsumo.Size = new System.Drawing.Size(62, 20);
+            this.labelNomInsumo.TabIndex = 0;
+            this.labelNomInsumo.Text = "Insumo";
+            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 170);
+            this.textBox1.Location = new System.Drawing.Point(515, 231);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(328, 26);
             this.textBox1.TabIndex = 6;
             // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Location = new System.Drawing.Point(3, 7);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxCodInsumCrear);
-            this.splitContainer1.Panel1.Controls.Add(this.labelCodInsumCrear);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.textBoxCodigInsumo);
-            this.splitContainer1.Panel2.Controls.Add(this.labelCodigoInsumo);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
-            this.splitContainer1.Panel2.Controls.Add(this.labelNomInsumo);
-            this.splitContainer1.Panel2.Controls.Add(this.labelFacturaInsumo);
-            this.splitContainer1.Panel2.Controls.Add(this.comboBoxNomInsumo);
-            this.splitContainer1.Panel2.Controls.Add(this.buttonIngresoInsumo);
-            this.splitContainer1.Panel2.Controls.Add(this.labelProveedor);
-            this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(859, 338);
-            this.splitContainer1.SplitterDistance = 424;
-            this.splitContainer1.TabIndex = 7;
-            // 
             // labelCodigoInsumo
             // 
             this.labelCodigoInsumo.AutoSize = true;
-            this.labelCodigoInsumo.Location = new System.Drawing.Point(15, 17);
+            this.labelCodigoInsumo.Location = new System.Drawing.Point(445, 78);
             this.labelCodigoInsumo.Name = "labelCodigoInsumo";
             this.labelCodigoInsumo.Size = new System.Drawing.Size(116, 20);
             this.labelCodigoInsumo.TabIndex = 7;
@@ -403,15 +402,24 @@ namespace BracoProyectos
             // 
             // textBoxCodigInsumo
             // 
-            this.textBoxCodigInsumo.Location = new System.Drawing.Point(142, 14);
+            this.textBoxCodigInsumo.Location = new System.Drawing.Point(572, 75);
             this.textBoxCodigInsumo.Name = "textBoxCodigInsumo";
             this.textBoxCodigInsumo.Size = new System.Drawing.Size(270, 26);
             this.textBoxCodigInsumo.TabIndex = 8;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(509, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(286, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "INGRESO DE INSUMOS A ALMACEN";
+            // 
             // labelCodInsumCrear
             // 
             this.labelCodInsumCrear.AutoSize = true;
-            this.labelCodInsumCrear.Location = new System.Drawing.Point(14, 17);
+            this.labelCodInsumCrear.Location = new System.Drawing.Point(15, 78);
             this.labelCodInsumCrear.Name = "labelCodInsumCrear";
             this.labelCodInsumCrear.Size = new System.Drawing.Size(116, 20);
             this.labelCodInsumCrear.TabIndex = 0;
@@ -419,16 +427,84 @@ namespace BracoProyectos
             // 
             // textBoxCodInsumCrear
             // 
-            this.textBoxCodInsumCrear.Location = new System.Drawing.Point(137, 14);
+            this.textBoxCodInsumCrear.Location = new System.Drawing.Point(138, 75);
             this.textBoxCodInsumCrear.Name = "textBoxCodInsumCrear";
             this.textBoxCodInsumCrear.Size = new System.Drawing.Size(274, 26);
             this.textBoxCodInsumCrear.TabIndex = 1;
+            // 
+            // labelInsumoCrear
+            // 
+            this.labelInsumoCrear.AutoSize = true;
+            this.labelInsumoCrear.Location = new System.Drawing.Point(20, 125);
+            this.labelInsumoCrear.Name = "labelInsumoCrear";
+            this.labelInsumoCrear.Size = new System.Drawing.Size(62, 20);
+            this.labelInsumoCrear.TabIndex = 2;
+            this.labelInsumoCrear.Text = "Insumo";
+            // 
+            // labelCrearInsumo
+            // 
+            this.labelCrearInsumo.AutoSize = true;
+            this.labelCrearInsumo.Location = new System.Drawing.Point(77, 27);
+            this.labelCrearInsumo.Name = "labelCrearInsumo";
+            this.labelCrearInsumo.Size = new System.Drawing.Size(252, 20);
+            this.labelCrearInsumo.TabIndex = 3;
+            this.labelCrearInsumo.Text = "CREAR INSUMOS EN ALMACEN";
+            // 
+            // labelProveeCrear
+            // 
+            this.labelProveeCrear.AutoSize = true;
+            this.labelProveeCrear.Location = new System.Drawing.Point(20, 179);
+            this.labelProveeCrear.Name = "labelProveeCrear";
+            this.labelProveeCrear.Size = new System.Drawing.Size(81, 20);
+            this.labelProveeCrear.TabIndex = 4;
+            this.labelProveeCrear.Text = "Proveedor";
+            // 
+            // textBoxCrearInsumo
+            // 
+            this.textBoxCrearInsumo.Location = new System.Drawing.Point(88, 122);
+            this.textBoxCrearInsumo.Name = "textBoxCrearInsumo";
+            this.textBoxCrearInsumo.Size = new System.Drawing.Size(324, 26);
+            this.textBoxCrearInsumo.TabIndex = 5;
+            // 
+            // textBoxCrearProvee
+            // 
+            this.textBoxCrearProvee.Location = new System.Drawing.Point(107, 176);
+            this.textBoxCrearProvee.Name = "textBoxCrearProvee";
+            this.textBoxCrearProvee.Size = new System.Drawing.Size(305, 26);
+            this.textBoxCrearProvee.TabIndex = 6;
+            // 
+            // buttonCrearInsumo
+            // 
+            this.buttonCrearInsumo.Location = new System.Drawing.Point(24, 290);
+            this.buttonCrearInsumo.Name = "buttonCrearInsumo";
+            this.buttonCrearInsumo.Size = new System.Drawing.Size(125, 54);
+            this.buttonCrearInsumo.TabIndex = 7;
+            this.buttonCrearInsumo.Text = "Crear Insumo";
+            this.buttonCrearInsumo.UseVisualStyleBackColor = true;
+            // 
+            // buttonEditInsum
+            // 
+            this.buttonEditInsum.Location = new System.Drawing.Point(155, 290);
+            this.buttonEditInsum.Name = "buttonEditInsum";
+            this.buttonEditInsum.Size = new System.Drawing.Size(125, 54);
+            this.buttonEditInsum.TabIndex = 10;
+            this.buttonEditInsum.Text = "Editar Insumo";
+            this.buttonEditInsum.UseVisualStyleBackColor = true;
+            // 
+            // buttonBuscInsumo
+            // 
+            this.buttonBuscInsumo.Location = new System.Drawing.Point(286, 290);
+            this.buttonBuscInsumo.Name = "buttonBuscInsumo";
+            this.buttonBuscInsumo.Size = new System.Drawing.Size(125, 54);
+            this.buttonBuscInsumo.TabIndex = 11;
+            this.buttonBuscInsumo.Text = "Buscar Insumo";
+            this.buttonBuscInsumo.UseVisualStyleBackColor = true;
             // 
             // BracoProyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 394);
+            this.ClientSize = new System.Drawing.Size(878, 424);
             this.Controls.Add(this.tabControlProyecto);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BracoProyectos";
@@ -438,12 +514,7 @@ namespace BracoProyectos
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -473,18 +544,26 @@ namespace BracoProyectos
         private System.Windows.Forms.Button buttonEliminarProyec;
         private System.Windows.Forms.Button buttonActualizarProyec;
         private System.Windows.Forms.Button buttonBuscarProyec;
-        private System.Windows.Forms.Label labelNomInsumo;
-        private System.Windows.Forms.ComboBox comboBoxNomInsumo;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label labelProveedor;
-        private System.Windows.Forms.Button buttonIngresoInsumo;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label labelFacturaInsumo;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.TextBox textBoxCodigInsumo;
-        private System.Windows.Forms.Label labelCodigoInsumo;
+        private System.Windows.Forms.Button buttonCrearInsumo;
+        private System.Windows.Forms.TextBox textBoxCrearProvee;
+        private System.Windows.Forms.TextBox textBoxCrearInsumo;
+        private System.Windows.Forms.Label labelProveeCrear;
+        private System.Windows.Forms.Label labelCrearInsumo;
+        private System.Windows.Forms.Label labelInsumoCrear;
         private System.Windows.Forms.TextBox textBoxCodInsumCrear;
         private System.Windows.Forms.Label labelCodInsumCrear;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxCodigInsumo;
+        private System.Windows.Forms.Label labelCodigoInsumo;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelNomInsumo;
+        private System.Windows.Forms.Label labelFacturaInsumo;
+        private System.Windows.Forms.ComboBox comboBoxNomInsumo;
+        private System.Windows.Forms.Button buttonIngresoInsumo;
+        private System.Windows.Forms.Label labelProveedor;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button buttonEditInsum;
+        private System.Windows.Forms.Button buttonBuscInsumo;
     }
 }
 

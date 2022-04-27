@@ -46,5 +46,10 @@ namespace BracoProyectos
         {
 
         }
+
+        private void tabPagePersonal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

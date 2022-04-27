@@ -45,7 +45,7 @@ namespace BracoProyectos
             this.textBoxCantFabricar = new System.Windows.Forms.TextBox();
             this.labelCantFabricar = new System.Windows.Forms.Label();
             this.labelFechaInicio = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerIngreProyec = new System.Windows.Forms.DateTimePicker();
             this.labelProduc = new System.Windows.Forms.Label();
             this.comboBoxProduc = new System.Windows.Forms.ComboBox();
             this.textBoxOT = new System.Windows.Forms.TextBox();
@@ -105,11 +105,31 @@ namespace BracoProyectos
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.tabPagePersonal = new System.Windows.Forms.TabPage();
-            this.textBoxNomEmple = new System.Windows.Forms.TextBox();
-            this.labelNomEmpl = new System.Windows.Forms.Label();
-            this.labelApelliPersonal = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelFechaIngre = new System.Windows.Forms.Label();
+            this.dateTimePickerPersIngre = new System.Windows.Forms.DateTimePicker();
+            this.textBoxDirec = new System.Windows.Forms.TextBox();
+            this.labelDirec = new System.Windows.Forms.Label();
+            this.textBoxCelular = new System.Windows.Forms.TextBox();
+            this.labelCel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelCargo = new System.Windows.Forms.Label();
+            this.textBoxDocument = new System.Windows.Forms.TextBox();
+            this.labelDocument = new System.Windows.Forms.Label();
             this.textBoxApelliEmp = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelApelliPersonal = new System.Windows.Forms.Label();
+            this.labelNomEmpl = new System.Windows.Forms.Label();
+            this.textBoxNomEmple = new System.Windows.Forms.TextBox();
+            this.textBoxRh = new System.Windows.Forms.TextBox();
+            this.labelRh = new System.Windows.Forms.Label();
+            this.textBoxCelEmerg = new System.Windows.Forms.TextBox();
+            this.labelCelEmerg = new System.Windows.Forms.Label();
+            this.textBoxPersEmerg = new System.Windows.Forms.TextBox();
+            this.labelPersoEmerg = new System.Windows.Forms.Label();
+            this.buttonElimPers = new System.Windows.Forms.Button();
+            this.buttonActzPerso = new System.Windows.Forms.Button();
+            this.buttonBuscPers = new System.Windows.Forms.Button();
+            this.buttonCrearPers = new System.Windows.Forms.Button();
             this.tabControlProyecto.SuspendLayout();
             this.tabPageProyecto.SuspendLayout();
             this.tabPageInsumos.SuspendLayout();
@@ -123,11 +143,11 @@ namespace BracoProyectos
             this.tabControlProyecto.Controls.Add(this.tabPageInsumos);
             this.tabControlProyecto.Controls.Add(this.tabPageEpp);
             this.tabControlProyecto.Controls.Add(this.tabPagePersonal);
-            this.tabControlProyecto.Location = new System.Drawing.Point(5, 3);
-            this.tabControlProyecto.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabControlProyecto.Location = new System.Drawing.Point(7, 4);
+            this.tabControlProyecto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabControlProyecto.Name = "tabControlProyecto";
             this.tabControlProyecto.SelectedIndex = 0;
-            this.tabControlProyecto.Size = new System.Drawing.Size(580, 270);
+            this.tabControlProyecto.Size = new System.Drawing.Size(773, 332);
             this.tabControlProyecto.TabIndex = 0;
             // 
             // tabPageProyecto
@@ -145,58 +165,58 @@ namespace BracoProyectos
             this.tabPageProyecto.Controls.Add(this.textBoxCantFabricar);
             this.tabPageProyecto.Controls.Add(this.labelCantFabricar);
             this.tabPageProyecto.Controls.Add(this.labelFechaInicio);
-            this.tabPageProyecto.Controls.Add(this.dateTimePicker1);
+            this.tabPageProyecto.Controls.Add(this.dateTimePickerIngreProyec);
             this.tabPageProyecto.Controls.Add(this.labelProduc);
             this.tabPageProyecto.Controls.Add(this.comboBoxProduc);
             this.tabPageProyecto.Controls.Add(this.textBoxOT);
             this.tabPageProyecto.Controls.Add(this.OT);
-            this.tabPageProyecto.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProyecto.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabPageProyecto.Location = new System.Drawing.Point(4, 25);
+            this.tabPageProyecto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageProyecto.Name = "tabPageProyecto";
-            this.tabPageProyecto.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPageProyecto.Size = new System.Drawing.Size(572, 244);
+            this.tabPageProyecto.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPageProyecto.Size = new System.Drawing.Size(765, 303);
             this.tabPageProyecto.TabIndex = 0;
             this.tabPageProyecto.Text = "Proyecto";
             this.tabPageProyecto.UseVisualStyleBackColor = true;
             // 
             // buttonEliminarProyec
             // 
-            this.buttonEliminarProyec.Location = new System.Drawing.Point(458, 190);
-            this.buttonEliminarProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEliminarProyec.Location = new System.Drawing.Point(611, 234);
+            this.buttonEliminarProyec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEliminarProyec.Name = "buttonEliminarProyec";
-            this.buttonEliminarProyec.Size = new System.Drawing.Size(83, 35);
+            this.buttonEliminarProyec.Size = new System.Drawing.Size(111, 43);
             this.buttonEliminarProyec.TabIndex = 17;
-            this.buttonEliminarProyec.Text = "Eliminar";
+            this.buttonEliminarProyec.Text = "Eliminar Proyecto";
             this.buttonEliminarProyec.UseVisualStyleBackColor = true;
             // 
             // buttonActualizarProyec
             // 
-            this.buttonActualizarProyec.Location = new System.Drawing.Point(321, 190);
-            this.buttonActualizarProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonActualizarProyec.Location = new System.Drawing.Point(428, 234);
+            this.buttonActualizarProyec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonActualizarProyec.Name = "buttonActualizarProyec";
-            this.buttonActualizarProyec.Size = new System.Drawing.Size(83, 35);
+            this.buttonActualizarProyec.Size = new System.Drawing.Size(111, 43);
             this.buttonActualizarProyec.TabIndex = 16;
-            this.buttonActualizarProyec.Text = "Actualizar";
+            this.buttonActualizarProyec.Text = "Actualizar Proyecto";
             this.buttonActualizarProyec.UseVisualStyleBackColor = true;
             // 
             // buttonBuscarProyec
             // 
-            this.buttonBuscarProyec.Location = new System.Drawing.Point(163, 190);
-            this.buttonBuscarProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBuscarProyec.Location = new System.Drawing.Point(217, 234);
+            this.buttonBuscarProyec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonBuscarProyec.Name = "buttonBuscarProyec";
-            this.buttonBuscarProyec.Size = new System.Drawing.Size(83, 35);
+            this.buttonBuscarProyec.Size = new System.Drawing.Size(111, 43);
             this.buttonBuscarProyec.TabIndex = 15;
-            this.buttonBuscarProyec.Text = "Buscar";
+            this.buttonBuscarProyec.Text = "Buscar Proyecto";
             this.buttonBuscarProyec.UseVisualStyleBackColor = true;
             // 
             // buttonCrearProyec
             // 
-            this.buttonCrearProyec.Location = new System.Drawing.Point(17, 190);
-            this.buttonCrearProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCrearProyec.Location = new System.Drawing.Point(23, 234);
+            this.buttonCrearProyec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCrearProyec.Name = "buttonCrearProyec";
-            this.buttonCrearProyec.Size = new System.Drawing.Size(83, 35);
+            this.buttonCrearProyec.Size = new System.Drawing.Size(111, 43);
             this.buttonCrearProyec.TabIndex = 14;
-            this.buttonCrearProyec.Text = "Crear";
+            this.buttonCrearProyec.Text = "Crear Proyecto";
             this.buttonCrearProyec.UseVisualStyleBackColor = true;
             // 
             // comboBoxCliente
@@ -205,101 +225,95 @@ namespace BracoProyectos
             this.comboBoxCliente.Items.AddRange(new object[] {
             "Ectricol",
             "Melexa"});
-            this.comboBoxCliente.Location = new System.Drawing.Point(368, 18);
-            this.comboBoxCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxCliente.Location = new System.Drawing.Point(491, 22);
+            this.comboBoxCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxCliente.Name = "comboBoxCliente";
-            this.comboBoxCliente.Size = new System.Drawing.Size(82, 21);
+            this.comboBoxCliente.Size = new System.Drawing.Size(108, 24);
             this.comboBoxCliente.TabIndex = 13;
             // 
             // labelCliente
             // 
             this.labelCliente.AutoSize = true;
-            this.labelCliente.Location = new System.Drawing.Point(325, 22);
-            this.labelCliente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCliente.Location = new System.Drawing.Point(433, 27);
             this.labelCliente.Name = "labelCliente";
-            this.labelCliente.Size = new System.Drawing.Size(39, 13);
+            this.labelCliente.Size = new System.Drawing.Size(51, 17);
             this.labelCliente.TabIndex = 12;
             this.labelCliente.Text = "Cliente";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(177, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(236, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.Size = new System.Drawing.Size(82, 17);
             this.label1.TabIndex = 11;
             this.label1.Text = "Descripción";
             // 
             // labelOrdenCompra
             // 
             this.labelOrdenCompra.AutoSize = true;
-            this.labelOrdenCompra.Location = new System.Drawing.Point(134, 23);
-            this.labelOrdenCompra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelOrdenCompra.Location = new System.Drawing.Point(179, 28);
             this.labelOrdenCompra.Name = "labelOrdenCompra";
-            this.labelOrdenCompra.Size = new System.Drawing.Size(22, 13);
+            this.labelOrdenCompra.Size = new System.Drawing.Size(28, 17);
             this.labelOrdenCompra.TabIndex = 10;
             this.labelOrdenCompra.Text = "OC";
             // 
             // textBoxDescripProyec
             // 
-            this.textBoxDescripProyec.Location = new System.Drawing.Point(255, 65);
-            this.textBoxDescripProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxDescripProyec.Location = new System.Drawing.Point(340, 80);
+            this.textBoxDescripProyec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDescripProyec.Name = "textBoxDescripProyec";
-            this.textBoxDescripProyec.Size = new System.Drawing.Size(316, 20);
+            this.textBoxDescripProyec.Size = new System.Drawing.Size(420, 22);
             this.textBoxDescripProyec.TabIndex = 9;
             // 
             // textBoxOrdenCompra
             // 
-            this.textBoxOrdenCompra.Location = new System.Drawing.Point(163, 19);
-            this.textBoxOrdenCompra.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxOrdenCompra.Location = new System.Drawing.Point(217, 23);
+            this.textBoxOrdenCompra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOrdenCompra.Name = "textBoxOrdenCompra";
-            this.textBoxOrdenCompra.Size = new System.Drawing.Size(125, 20);
+            this.textBoxOrdenCompra.Size = new System.Drawing.Size(165, 22);
             this.textBoxOrdenCompra.TabIndex = 8;
             // 
             // textBoxCantFabricar
             // 
-            this.textBoxCantFabricar.Location = new System.Drawing.Point(67, 111);
-            this.textBoxCantFabricar.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCantFabricar.Location = new System.Drawing.Point(89, 137);
+            this.textBoxCantFabricar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCantFabricar.Name = "textBoxCantFabricar";
-            this.textBoxCantFabricar.Size = new System.Drawing.Size(59, 20);
+            this.textBoxCantFabricar.Size = new System.Drawing.Size(77, 22);
             this.textBoxCantFabricar.TabIndex = 7;
             // 
             // labelCantFabricar
             // 
             this.labelCantFabricar.AutoSize = true;
-            this.labelCantFabricar.Location = new System.Drawing.Point(14, 115);
-            this.labelCantFabricar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCantFabricar.Location = new System.Drawing.Point(19, 142);
             this.labelCantFabricar.Name = "labelCantFabricar";
-            this.labelCantFabricar.Size = new System.Drawing.Size(49, 13);
+            this.labelCantFabricar.Size = new System.Drawing.Size(64, 17);
             this.labelCantFabricar.TabIndex = 6;
             this.labelCantFabricar.Text = "Cantidad";
             // 
             // labelFechaInicio
             // 
             this.labelFechaInicio.AutoSize = true;
-            this.labelFechaInicio.Location = new System.Drawing.Point(153, 115);
-            this.labelFechaInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelFechaInicio.Location = new System.Drawing.Point(204, 142);
             this.labelFechaInicio.Name = "labelFechaInicio";
-            this.labelFechaInicio.Size = new System.Drawing.Size(65, 13);
+            this.labelFechaInicio.Size = new System.Drawing.Size(83, 17);
             this.labelFechaInicio.TabIndex = 5;
             this.labelFechaInicio.Text = "Fecha Inicio";
             // 
-            // dateTimePicker1
+            // dateTimePickerIngreProyec
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(233, 111);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePickerIngreProyec.Location = new System.Drawing.Point(311, 137);
+            this.dateTimePickerIngreProyec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerIngreProyec.Name = "dateTimePickerIngreProyec";
+            this.dateTimePickerIngreProyec.Size = new System.Drawing.Size(228, 22);
+            this.dateTimePickerIngreProyec.TabIndex = 4;
             // 
             // labelProduc
             // 
             this.labelProduc.AutoSize = true;
-            this.labelProduc.Location = new System.Drawing.Point(14, 69);
-            this.labelProduc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelProduc.Location = new System.Drawing.Point(19, 85);
             this.labelProduc.Name = "labelProduc";
-            this.labelProduc.Size = new System.Drawing.Size(50, 13);
+            this.labelProduc.Size = new System.Drawing.Size(65, 17);
             this.labelProduc.TabIndex = 3;
             this.labelProduc.Text = "Producto";
             // 
@@ -310,27 +324,26 @@ namespace BracoProyectos
             "Shelter",
             "Skid",
             "Otro"});
-            this.comboBoxProduc.Location = new System.Drawing.Point(67, 64);
-            this.comboBoxProduc.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.comboBoxProduc.Location = new System.Drawing.Point(89, 79);
+            this.comboBoxProduc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBoxProduc.Name = "comboBoxProduc";
-            this.comboBoxProduc.Size = new System.Drawing.Size(92, 21);
+            this.comboBoxProduc.Size = new System.Drawing.Size(121, 24);
             this.comboBoxProduc.TabIndex = 2;
             // 
             // textBoxOT
             // 
-            this.textBoxOT.Location = new System.Drawing.Point(40, 19);
-            this.textBoxOT.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxOT.Location = new System.Drawing.Point(53, 23);
+            this.textBoxOT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxOT.Name = "textBoxOT";
-            this.textBoxOT.Size = new System.Drawing.Size(85, 20);
+            this.textBoxOT.Size = new System.Drawing.Size(112, 22);
             this.textBoxOT.TabIndex = 1;
             // 
             // OT
             // 
             this.OT.AutoSize = true;
-            this.OT.Location = new System.Drawing.Point(14, 22);
-            this.OT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.OT.Location = new System.Drawing.Point(19, 27);
             this.OT.Name = "OT";
-            this.OT.Size = new System.Drawing.Size(22, 13);
+            this.OT.Size = new System.Drawing.Size(28, 17);
             this.OT.TabIndex = 0;
             this.OT.Text = "OT";
             this.OT.Click += new System.EventHandler(this.label1_Click);
@@ -363,11 +376,11 @@ namespace BracoProyectos
             this.tabPageInsumos.Controls.Add(this.labelFacturaInsumo);
             this.tabPageInsumos.Controls.Add(this.comboBoxNomInsumo);
             this.tabPageInsumos.Controls.Add(this.splitter1);
-            this.tabPageInsumos.Location = new System.Drawing.Point(4, 22);
-            this.tabPageInsumos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabPageInsumos.Location = new System.Drawing.Point(4, 25);
+            this.tabPageInsumos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageInsumos.Name = "tabPageInsumos";
-            this.tabPageInsumos.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPageInsumos.Size = new System.Drawing.Size(572, 244);
+            this.tabPageInsumos.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPageInsumos.Size = new System.Drawing.Size(765, 303);
             this.tabPageInsumos.TabIndex = 1;
             this.tabPageInsumos.Text = "Insumos";
             this.tabPageInsumos.UseVisualStyleBackColor = true;
@@ -375,76 +388,74 @@ namespace BracoProyectos
             // 
             // textBoxCantIngreso
             // 
-            this.textBoxCantIngreso.Location = new System.Drawing.Point(350, 188);
-            this.textBoxCantIngreso.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCantIngreso.Location = new System.Drawing.Point(467, 231);
+            this.textBoxCantIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCantIngreso.Name = "textBoxCantIngreso";
-            this.textBoxCantIngreso.Size = new System.Drawing.Size(68, 20);
+            this.textBoxCantIngreso.Size = new System.Drawing.Size(89, 22);
             this.textBoxCantIngreso.TabIndex = 16;
             // 
             // textBoxCantCrear
             // 
-            this.textBoxCantCrear.Location = new System.Drawing.Point(64, 150);
-            this.textBoxCantCrear.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCantCrear.Location = new System.Drawing.Point(85, 185);
+            this.textBoxCantCrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCantCrear.Name = "textBoxCantCrear";
-            this.textBoxCantCrear.Size = new System.Drawing.Size(68, 20);
+            this.textBoxCantCrear.Size = new System.Drawing.Size(89, 22);
             this.textBoxCantCrear.TabIndex = 15;
             // 
             // labelCantCrear
             // 
             this.labelCantCrear.AutoSize = true;
-            this.labelCantCrear.Location = new System.Drawing.Point(11, 150);
-            this.labelCantCrear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCantCrear.Location = new System.Drawing.Point(15, 185);
             this.labelCantCrear.Name = "labelCantCrear";
-            this.labelCantCrear.Size = new System.Drawing.Size(49, 13);
+            this.labelCantCrear.Size = new System.Drawing.Size(64, 17);
             this.labelCantCrear.TabIndex = 14;
             this.labelCantCrear.Text = "Cantidad";
             // 
             // labelCantIngre
             // 
             this.labelCantIngre.AutoSize = true;
-            this.labelCantIngre.Location = new System.Drawing.Point(297, 188);
-            this.labelCantIngre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCantIngre.Location = new System.Drawing.Point(396, 231);
             this.labelCantIngre.Name = "labelCantIngre";
-            this.labelCantIngre.Size = new System.Drawing.Size(49, 13);
+            this.labelCantIngre.Size = new System.Drawing.Size(64, 17);
             this.labelCantIngre.TabIndex = 13;
             this.labelCantIngre.Text = "Cantidad";
             // 
             // buttonElimInsum
             // 
-            this.buttonElimInsum.Location = new System.Drawing.Point(210, 188);
-            this.buttonElimInsum.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonElimInsum.Location = new System.Drawing.Point(280, 231);
+            this.buttonElimInsum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonElimInsum.Name = "buttonElimInsum";
-            this.buttonElimInsum.Size = new System.Drawing.Size(61, 35);
+            this.buttonElimInsum.Size = new System.Drawing.Size(81, 43);
             this.buttonElimInsum.TabIndex = 12;
             this.buttonElimInsum.Text = "Eliminar Insumo";
             this.buttonElimInsum.UseVisualStyleBackColor = true;
             // 
             // buttonBuscInsumo
             // 
-            this.buttonBuscInsumo.Location = new System.Drawing.Point(79, 188);
-            this.buttonBuscInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBuscInsumo.Location = new System.Drawing.Point(105, 231);
+            this.buttonBuscInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonBuscInsumo.Name = "buttonBuscInsumo";
-            this.buttonBuscInsumo.Size = new System.Drawing.Size(61, 35);
+            this.buttonBuscInsumo.Size = new System.Drawing.Size(81, 43);
             this.buttonBuscInsumo.TabIndex = 11;
             this.buttonBuscInsumo.Text = "Buscar Insumo";
             this.buttonBuscInsumo.UseVisualStyleBackColor = true;
             // 
             // buttonEditInsum
             // 
-            this.buttonEditInsum.Location = new System.Drawing.Point(145, 188);
-            this.buttonEditInsum.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditInsum.Location = new System.Drawing.Point(193, 231);
+            this.buttonEditInsum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEditInsum.Name = "buttonEditInsum";
-            this.buttonEditInsum.Size = new System.Drawing.Size(61, 35);
+            this.buttonEditInsum.Size = new System.Drawing.Size(81, 43);
             this.buttonEditInsum.TabIndex = 10;
             this.buttonEditInsum.Text = "Editar Insumo";
             this.buttonEditInsum.UseVisualStyleBackColor = true;
             // 
             // buttonCrearInsumo
             // 
-            this.buttonCrearInsumo.Location = new System.Drawing.Point(14, 188);
-            this.buttonCrearInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCrearInsumo.Location = new System.Drawing.Point(19, 231);
+            this.buttonCrearInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCrearInsumo.Name = "buttonCrearInsumo";
-            this.buttonCrearInsumo.Size = new System.Drawing.Size(61, 35);
+            this.buttonCrearInsumo.Size = new System.Drawing.Size(81, 43);
             this.buttonCrearInsumo.TabIndex = 7;
             this.buttonCrearInsumo.Text = "Crear Insumo";
             this.buttonCrearInsumo.UseVisualStyleBackColor = true;
@@ -452,138 +463,130 @@ namespace BracoProyectos
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(339, 18);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(452, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 13);
+            this.label2.Size = new System.Drawing.Size(243, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "INGRESO DE INSUMOS A ALMACEN";
             // 
             // textBoxCrearProvee
             // 
-            this.textBoxCrearProvee.Location = new System.Drawing.Point(69, 114);
-            this.textBoxCrearProvee.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearProvee.Location = new System.Drawing.Point(92, 140);
+            this.textBoxCrearProvee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCrearProvee.Name = "textBoxCrearProvee";
-            this.textBoxCrearProvee.Size = new System.Drawing.Size(205, 20);
+            this.textBoxCrearProvee.Size = new System.Drawing.Size(272, 22);
             this.textBoxCrearProvee.TabIndex = 6;
             // 
             // textBoxCodigInsumo
             // 
-            this.textBoxCodigInsumo.Location = new System.Drawing.Point(381, 49);
-            this.textBoxCodigInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodigInsumo.Location = new System.Drawing.Point(508, 60);
+            this.textBoxCodigInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCodigInsumo.Name = "textBoxCodigInsumo";
-            this.textBoxCodigInsumo.Size = new System.Drawing.Size(181, 20);
+            this.textBoxCodigInsumo.Size = new System.Drawing.Size(240, 22);
             this.textBoxCodigInsumo.TabIndex = 8;
             // 
             // textBoxCrearInsumo
             // 
-            this.textBoxCrearInsumo.Location = new System.Drawing.Point(57, 79);
-            this.textBoxCrearInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearInsumo.Location = new System.Drawing.Point(76, 97);
+            this.textBoxCrearInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCrearInsumo.Name = "textBoxCrearInsumo";
-            this.textBoxCrearInsumo.Size = new System.Drawing.Size(217, 20);
+            this.textBoxCrearInsumo.Size = new System.Drawing.Size(288, 22);
             this.textBoxCrearInsumo.TabIndex = 5;
             // 
             // labelProveeCrear
             // 
             this.labelProveeCrear.AutoSize = true;
-            this.labelProveeCrear.Location = new System.Drawing.Point(11, 116);
-            this.labelProveeCrear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelProveeCrear.Location = new System.Drawing.Point(15, 143);
             this.labelProveeCrear.Name = "labelProveeCrear";
-            this.labelProveeCrear.Size = new System.Drawing.Size(56, 13);
+            this.labelProveeCrear.Size = new System.Drawing.Size(74, 17);
             this.labelProveeCrear.TabIndex = 4;
             this.labelProveeCrear.Text = "Proveedor";
             // 
             // labelCodigoInsumo
             // 
             this.labelCodigoInsumo.AutoSize = true;
-            this.labelCodigoInsumo.Location = new System.Drawing.Point(297, 51);
-            this.labelCodigoInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCodigoInsumo.Location = new System.Drawing.Point(396, 63);
             this.labelCodigoInsumo.Name = "labelCodigoInsumo";
-            this.labelCodigoInsumo.Size = new System.Drawing.Size(77, 13);
+            this.labelCodigoInsumo.Size = new System.Drawing.Size(101, 17);
             this.labelCodigoInsumo.TabIndex = 7;
             this.labelCodigoInsumo.Text = "Codigo Insumo";
             // 
             // labelCrearInsumo
             // 
             this.labelCrearInsumo.AutoSize = true;
-            this.labelCrearInsumo.Location = new System.Drawing.Point(49, 18);
-            this.labelCrearInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCrearInsumo.Location = new System.Drawing.Point(65, 22);
             this.labelCrearInsumo.Name = "labelCrearInsumo";
-            this.labelCrearInsumo.Size = new System.Drawing.Size(169, 13);
+            this.labelCrearInsumo.Size = new System.Drawing.Size(214, 17);
             this.labelCrearInsumo.TabIndex = 3;
             this.labelCrearInsumo.Text = "CREAR INSUMOS EN ALMACEN";
             // 
             // labelInsumoCrear
             // 
             this.labelInsumoCrear.AutoSize = true;
-            this.labelInsumoCrear.Location = new System.Drawing.Point(11, 81);
-            this.labelInsumoCrear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelInsumoCrear.Location = new System.Drawing.Point(15, 100);
             this.labelInsumoCrear.Name = "labelInsumoCrear";
-            this.labelInsumoCrear.Size = new System.Drawing.Size(41, 13);
+            this.labelInsumoCrear.Size = new System.Drawing.Size(53, 17);
             this.labelInsumoCrear.TabIndex = 2;
             this.labelInsumoCrear.Text = "Insumo";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(355, 114);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Location = new System.Drawing.Point(473, 140);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(208, 21);
+            this.comboBox1.Size = new System.Drawing.Size(276, 24);
             this.comboBox1.TabIndex = 3;
             // 
             // textBoxCodInsumCrear
             // 
-            this.textBoxCodInsumCrear.Location = new System.Drawing.Point(90, 49);
-            this.textBoxCodInsumCrear.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodInsumCrear.Location = new System.Drawing.Point(120, 60);
+            this.textBoxCodInsumCrear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCodInsumCrear.Name = "textBoxCodInsumCrear";
-            this.textBoxCodInsumCrear.Size = new System.Drawing.Size(184, 20);
+            this.textBoxCodInsumCrear.Size = new System.Drawing.Size(244, 22);
             this.textBoxCodInsumCrear.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(343, 150);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(457, 185);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
+            this.textBox1.Size = new System.Drawing.Size(292, 22);
             this.textBox1.TabIndex = 6;
             // 
             // labelCodInsumCrear
             // 
             this.labelCodInsumCrear.AutoSize = true;
-            this.labelCodInsumCrear.Location = new System.Drawing.Point(8, 51);
-            this.labelCodInsumCrear.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCodInsumCrear.Location = new System.Drawing.Point(11, 63);
             this.labelCodInsumCrear.Name = "labelCodInsumCrear";
-            this.labelCodInsumCrear.Size = new System.Drawing.Size(77, 13);
+            this.labelCodInsumCrear.Size = new System.Drawing.Size(101, 17);
             this.labelCodInsumCrear.TabIndex = 0;
             this.labelCodInsumCrear.Text = "Codigo Inusmo";
             // 
             // labelProveedor
             // 
             this.labelProveedor.AutoSize = true;
-            this.labelProveedor.Location = new System.Drawing.Point(297, 114);
-            this.labelProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelProveedor.Location = new System.Drawing.Point(396, 140);
             this.labelProveedor.Name = "labelProveedor";
-            this.labelProveedor.Size = new System.Drawing.Size(56, 13);
+            this.labelProveedor.Size = new System.Drawing.Size(74, 17);
             this.labelProveedor.TabIndex = 2;
             this.labelProveedor.Text = "Proveedor";
             // 
             // labelNomInsumo
             // 
             this.labelNomInsumo.AutoSize = true;
-            this.labelNomInsumo.Location = new System.Drawing.Point(297, 83);
-            this.labelNomInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNomInsumo.Location = new System.Drawing.Point(396, 102);
             this.labelNomInsumo.Name = "labelNomInsumo";
-            this.labelNomInsumo.Size = new System.Drawing.Size(41, 13);
+            this.labelNomInsumo.Size = new System.Drawing.Size(53, 17);
             this.labelNomInsumo.TabIndex = 0;
             this.labelNomInsumo.Text = "Insumo";
             // 
             // buttonIngresoInsumo
             // 
-            this.buttonIngresoInsumo.Location = new System.Drawing.Point(478, 188);
-            this.buttonIngresoInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonIngresoInsumo.Location = new System.Drawing.Point(637, 231);
+            this.buttonIngresoInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonIngresoInsumo.Name = "buttonIngresoInsumo";
-            this.buttonIngresoInsumo.Size = new System.Drawing.Size(83, 35);
+            this.buttonIngresoInsumo.Size = new System.Drawing.Size(111, 43);
             this.buttonIngresoInsumo.TabIndex = 4;
             this.buttonIngresoInsumo.Text = "Ingreso Almacen";
             this.buttonIngresoInsumo.UseVisualStyleBackColor = true;
@@ -591,28 +594,27 @@ namespace BracoProyectos
             // labelFacturaInsumo
             // 
             this.labelFacturaInsumo.AutoSize = true;
-            this.labelFacturaInsumo.Location = new System.Drawing.Point(297, 154);
-            this.labelFacturaInsumo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelFacturaInsumo.Location = new System.Drawing.Point(396, 190);
             this.labelFacturaInsumo.Name = "labelFacturaInsumo";
-            this.labelFacturaInsumo.Size = new System.Drawing.Size(43, 13);
+            this.labelFacturaInsumo.Size = new System.Drawing.Size(56, 17);
             this.labelFacturaInsumo.TabIndex = 5;
             this.labelFacturaInsumo.Text = "Factura";
             // 
             // comboBoxNomInsumo
             // 
             this.comboBoxNomInsumo.FormattingEnabled = true;
-            this.comboBoxNomInsumo.Location = new System.Drawing.Point(342, 77);
-            this.comboBoxNomInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxNomInsumo.Location = new System.Drawing.Point(456, 95);
+            this.comboBoxNomInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxNomInsumo.Name = "comboBoxNomInsumo";
-            this.comboBoxNomInsumo.Size = new System.Drawing.Size(221, 21);
+            this.comboBoxNomInsumo.Size = new System.Drawing.Size(293, 24);
             this.comboBoxNomInsumo.TabIndex = 1;
             // 
             // splitter1
             // 
-            this.splitter1.Location = new System.Drawing.Point(2, 3);
-            this.splitter1.Margin = new System.Windows.Forms.Padding(2);
+            this.splitter1.Location = new System.Drawing.Point(3, 4);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(283, 238);
+            this.splitter1.Size = new System.Drawing.Size(377, 295);
             this.splitter1.TabIndex = 17;
             this.splitter1.TabStop = false;
             // 
@@ -644,87 +646,85 @@ namespace BracoProyectos
             this.tabPageEpp.Controls.Add(this.labelFactEppIngre);
             this.tabPageEpp.Controls.Add(this.comboBox3);
             this.tabPageEpp.Controls.Add(this.splitter2);
-            this.tabPageEpp.Location = new System.Drawing.Point(4, 22);
-            this.tabPageEpp.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabPageEpp.Location = new System.Drawing.Point(4, 25);
+            this.tabPageEpp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPageEpp.Name = "tabPageEpp";
-            this.tabPageEpp.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPageEpp.Size = new System.Drawing.Size(572, 244);
+            this.tabPageEpp.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPageEpp.Size = new System.Drawing.Size(765, 303);
             this.tabPageEpp.TabIndex = 2;
             this.tabPageEpp.Text = "EPP";
             this.tabPageEpp.UseVisualStyleBackColor = true;
             // 
             // textBoxIngreCantEpp
             // 
-            this.textBoxIngreCantEpp.Location = new System.Drawing.Point(350, 188);
-            this.textBoxIngreCantEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxIngreCantEpp.Location = new System.Drawing.Point(467, 231);
+            this.textBoxIngreCantEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxIngreCantEpp.Name = "textBoxIngreCantEpp";
-            this.textBoxIngreCantEpp.Size = new System.Drawing.Size(68, 20);
+            this.textBoxIngreCantEpp.Size = new System.Drawing.Size(89, 22);
             this.textBoxIngreCantEpp.TabIndex = 42;
             // 
             // textBoxCrearCant
             // 
-            this.textBoxCrearCant.Location = new System.Drawing.Point(64, 150);
-            this.textBoxCrearCant.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearCant.Location = new System.Drawing.Point(85, 185);
+            this.textBoxCrearCant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCrearCant.Name = "textBoxCrearCant";
-            this.textBoxCrearCant.Size = new System.Drawing.Size(68, 20);
+            this.textBoxCrearCant.Size = new System.Drawing.Size(89, 22);
             this.textBoxCrearCant.TabIndex = 41;
             // 
             // labelCantCrearEpp
             // 
             this.labelCantCrearEpp.AutoSize = true;
-            this.labelCantCrearEpp.Location = new System.Drawing.Point(11, 150);
-            this.labelCantCrearEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCantCrearEpp.Location = new System.Drawing.Point(15, 185);
             this.labelCantCrearEpp.Name = "labelCantCrearEpp";
-            this.labelCantCrearEpp.Size = new System.Drawing.Size(49, 13);
+            this.labelCantCrearEpp.Size = new System.Drawing.Size(64, 17);
             this.labelCantCrearEpp.TabIndex = 40;
             this.labelCantCrearEpp.Text = "Cantidad";
             // 
             // labelCantIngreEpp
             // 
             this.labelCantIngreEpp.AutoSize = true;
-            this.labelCantIngreEpp.Location = new System.Drawing.Point(297, 192);
-            this.labelCantIngreEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCantIngreEpp.Location = new System.Drawing.Point(396, 236);
             this.labelCantIngreEpp.Name = "labelCantIngreEpp";
-            this.labelCantIngreEpp.Size = new System.Drawing.Size(49, 13);
+            this.labelCantIngreEpp.Size = new System.Drawing.Size(64, 17);
             this.labelCantIngreEpp.TabIndex = 39;
             this.labelCantIngreEpp.Text = "Cantidad";
             // 
             // buttonElimEpp
             // 
-            this.buttonElimEpp.Location = new System.Drawing.Point(210, 188);
-            this.buttonElimEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonElimEpp.Location = new System.Drawing.Point(280, 231);
+            this.buttonElimEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonElimEpp.Name = "buttonElimEpp";
-            this.buttonElimEpp.Size = new System.Drawing.Size(61, 35);
+            this.buttonElimEpp.Size = new System.Drawing.Size(81, 43);
             this.buttonElimEpp.TabIndex = 38;
             this.buttonElimEpp.Text = "Eliminar Epp";
             this.buttonElimEpp.UseVisualStyleBackColor = true;
             // 
             // buttonBuscarEpp
             // 
-            this.buttonBuscarEpp.Location = new System.Drawing.Point(80, 188);
-            this.buttonBuscarEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBuscarEpp.Location = new System.Drawing.Point(107, 231);
+            this.buttonBuscarEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonBuscarEpp.Name = "buttonBuscarEpp";
-            this.buttonBuscarEpp.Size = new System.Drawing.Size(61, 35);
+            this.buttonBuscarEpp.Size = new System.Drawing.Size(81, 43);
             this.buttonBuscarEpp.TabIndex = 37;
             this.buttonBuscarEpp.Text = "Buscar Epp";
             this.buttonBuscarEpp.UseVisualStyleBackColor = true;
             // 
             // buttonEditEpp
             // 
-            this.buttonEditEpp.Location = new System.Drawing.Point(145, 188);
-            this.buttonEditEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditEpp.Location = new System.Drawing.Point(193, 231);
+            this.buttonEditEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEditEpp.Name = "buttonEditEpp";
-            this.buttonEditEpp.Size = new System.Drawing.Size(61, 35);
+            this.buttonEditEpp.Size = new System.Drawing.Size(81, 43);
             this.buttonEditEpp.TabIndex = 36;
             this.buttonEditEpp.Text = "Editar Epp";
             this.buttonEditEpp.UseVisualStyleBackColor = true;
             // 
             // buttonCrearEpp
             // 
-            this.buttonCrearEpp.Location = new System.Drawing.Point(14, 188);
-            this.buttonCrearEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCrearEpp.Location = new System.Drawing.Point(19, 231);
+            this.buttonCrearEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCrearEpp.Name = "buttonCrearEpp";
-            this.buttonCrearEpp.Size = new System.Drawing.Size(61, 35);
+            this.buttonCrearEpp.Size = new System.Drawing.Size(81, 43);
             this.buttonCrearEpp.TabIndex = 33;
             this.buttonCrearEpp.Text = "Crear Epp";
             this.buttonCrearEpp.UseVisualStyleBackColor = true;
@@ -732,138 +732,130 @@ namespace BracoProyectos
             // labelIngreEpp
             // 
             this.labelIngreEpp.AutoSize = true;
-            this.labelIngreEpp.Location = new System.Drawing.Point(339, 18);
-            this.labelIngreEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelIngreEpp.Location = new System.Drawing.Point(452, 22);
             this.labelIngreEpp.Name = "labelIngreEpp";
-            this.labelIngreEpp.Size = new System.Drawing.Size(162, 13);
+            this.labelIngreEpp.Size = new System.Drawing.Size(207, 17);
             this.labelIngreEpp.TabIndex = 35;
             this.labelIngreEpp.Text = "INGRESO DE EPP A ALMACEN";
             // 
             // textBoxCrearProveeEpp
             // 
-            this.textBoxCrearProveeEpp.Location = new System.Drawing.Point(69, 114);
-            this.textBoxCrearProveeEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearProveeEpp.Location = new System.Drawing.Point(92, 140);
+            this.textBoxCrearProveeEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCrearProveeEpp.Name = "textBoxCrearProveeEpp";
-            this.textBoxCrearProveeEpp.Size = new System.Drawing.Size(205, 20);
+            this.textBoxCrearProveeEpp.Size = new System.Drawing.Size(272, 22);
             this.textBoxCrearProveeEpp.TabIndex = 30;
             // 
             // textBoxCodIngreEpp
             // 
-            this.textBoxCodIngreEpp.Location = new System.Drawing.Point(381, 49);
-            this.textBoxCodIngreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodIngreEpp.Location = new System.Drawing.Point(508, 60);
+            this.textBoxCodIngreEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCodIngreEpp.Name = "textBoxCodIngreEpp";
-            this.textBoxCodIngreEpp.Size = new System.Drawing.Size(181, 20);
+            this.textBoxCodIngreEpp.Size = new System.Drawing.Size(240, 22);
             this.textBoxCodIngreEpp.TabIndex = 34;
             // 
             // textBoxNombreEpp
             // 
-            this.textBoxNombreEpp.Location = new System.Drawing.Point(57, 79);
-            this.textBoxNombreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNombreEpp.Location = new System.Drawing.Point(76, 97);
+            this.textBoxNombreEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNombreEpp.Name = "textBoxNombreEpp";
-            this.textBoxNombreEpp.Size = new System.Drawing.Size(217, 20);
+            this.textBoxNombreEpp.Size = new System.Drawing.Size(288, 22);
             this.textBoxNombreEpp.TabIndex = 28;
             // 
             // labelCrearProveeEpp
             // 
             this.labelCrearProveeEpp.AutoSize = true;
-            this.labelCrearProveeEpp.Location = new System.Drawing.Point(11, 116);
-            this.labelCrearProveeEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCrearProveeEpp.Location = new System.Drawing.Point(15, 143);
             this.labelCrearProveeEpp.Name = "labelCrearProveeEpp";
-            this.labelCrearProveeEpp.Size = new System.Drawing.Size(56, 13);
+            this.labelCrearProveeEpp.Size = new System.Drawing.Size(74, 17);
             this.labelCrearProveeEpp.TabIndex = 26;
             this.labelCrearProveeEpp.Text = "Proveedor";
             // 
             // labelCodIngreEpp
             // 
             this.labelCodIngreEpp.AutoSize = true;
-            this.labelCodIngreEpp.Location = new System.Drawing.Point(297, 51);
-            this.labelCodIngreEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCodIngreEpp.Location = new System.Drawing.Point(396, 63);
             this.labelCodIngreEpp.Name = "labelCodIngreEpp";
-            this.labelCodIngreEpp.Size = new System.Drawing.Size(62, 13);
+            this.labelCodIngreEpp.Size = new System.Drawing.Size(81, 17);
             this.labelCodIngreEpp.TabIndex = 32;
             this.labelCodIngreEpp.Text = "Codigo Epp";
             // 
             // labelCrearEpp
             // 
             this.labelCrearEpp.AutoSize = true;
-            this.labelCrearEpp.Location = new System.Drawing.Point(63, 18);
-            this.labelCrearEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCrearEpp.Location = new System.Drawing.Point(84, 22);
             this.labelCrearEpp.Name = "labelCrearEpp";
-            this.labelCrearEpp.Size = new System.Drawing.Size(140, 13);
+            this.labelCrearEpp.Size = new System.Drawing.Size(178, 17);
             this.labelCrearEpp.TabIndex = 25;
             this.labelCrearEpp.Text = "CREAR EPP EN ALMACEN";
             // 
             // labelEpp
             // 
             this.labelEpp.AutoSize = true;
-            this.labelEpp.Location = new System.Drawing.Point(12, 81);
-            this.labelEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelEpp.Location = new System.Drawing.Point(16, 100);
             this.labelEpp.Name = "labelEpp";
-            this.labelEpp.Size = new System.Drawing.Size(26, 13);
+            this.labelEpp.Size = new System.Drawing.Size(33, 17);
             this.labelEpp.TabIndex = 23;
             this.labelEpp.Text = "Epp";
             // 
             // comboBoxIngreEppProvee
             // 
             this.comboBoxIngreEppProvee.FormattingEnabled = true;
-            this.comboBoxIngreEppProvee.Location = new System.Drawing.Point(355, 114);
-            this.comboBoxIngreEppProvee.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxIngreEppProvee.Location = new System.Drawing.Point(473, 140);
+            this.comboBoxIngreEppProvee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxIngreEppProvee.Name = "comboBoxIngreEppProvee";
-            this.comboBoxIngreEppProvee.Size = new System.Drawing.Size(208, 21);
+            this.comboBoxIngreEppProvee.Size = new System.Drawing.Size(276, 24);
             this.comboBoxIngreEppProvee.TabIndex = 24;
             // 
             // textBoxCodgEpp
             // 
-            this.textBoxCodgEpp.Location = new System.Drawing.Point(90, 49);
-            this.textBoxCodgEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodgEpp.Location = new System.Drawing.Point(120, 60);
+            this.textBoxCodgEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCodgEpp.Name = "textBoxCodgEpp";
-            this.textBoxCodgEpp.Size = new System.Drawing.Size(184, 20);
+            this.textBoxCodgEpp.Size = new System.Drawing.Size(244, 22);
             this.textBoxCodgEpp.TabIndex = 20;
             // 
             // textBoxNombFactIngreEpp
             // 
-            this.textBoxNombFactIngreEpp.Location = new System.Drawing.Point(343, 150);
-            this.textBoxNombFactIngreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNombFactIngreEpp.Location = new System.Drawing.Point(457, 185);
+            this.textBoxNombFactIngreEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxNombFactIngreEpp.Name = "textBoxNombFactIngreEpp";
-            this.textBoxNombFactIngreEpp.Size = new System.Drawing.Size(220, 20);
+            this.textBoxNombFactIngreEpp.Size = new System.Drawing.Size(292, 22);
             this.textBoxNombFactIngreEpp.TabIndex = 31;
             // 
             // labelCodigEpp
             // 
             this.labelCodigEpp.AutoSize = true;
-            this.labelCodigEpp.Location = new System.Drawing.Point(8, 51);
-            this.labelCodigEpp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCodigEpp.Location = new System.Drawing.Point(11, 63);
             this.labelCodigEpp.Name = "labelCodigEpp";
-            this.labelCodigEpp.Size = new System.Drawing.Size(62, 13);
+            this.labelCodigEpp.Size = new System.Drawing.Size(81, 17);
             this.labelCodigEpp.TabIndex = 19;
             this.labelCodigEpp.Text = "Codigo Epp";
             // 
             // labelProveeEppIngre
             // 
             this.labelProveeEppIngre.AutoSize = true;
-            this.labelProveeEppIngre.Location = new System.Drawing.Point(297, 114);
-            this.labelProveeEppIngre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelProveeEppIngre.Location = new System.Drawing.Point(396, 140);
             this.labelProveeEppIngre.Name = "labelProveeEppIngre";
-            this.labelProveeEppIngre.Size = new System.Drawing.Size(56, 13);
+            this.labelProveeEppIngre.Size = new System.Drawing.Size(74, 17);
             this.labelProveeEppIngre.TabIndex = 22;
             this.labelProveeEppIngre.Text = "Proveedor";
             // 
             // label1NomEppIngre
             // 
             this.label1NomEppIngre.AutoSize = true;
-            this.label1NomEppIngre.Location = new System.Drawing.Point(297, 83);
-            this.label1NomEppIngre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1NomEppIngre.Location = new System.Drawing.Point(396, 102);
             this.label1NomEppIngre.Name = "label1NomEppIngre";
-            this.label1NomEppIngre.Size = new System.Drawing.Size(26, 13);
+            this.label1NomEppIngre.Size = new System.Drawing.Size(33, 17);
             this.label1NomEppIngre.TabIndex = 18;
             this.label1NomEppIngre.Text = "Epp";
             // 
             // buttonIngreEpp
             // 
-            this.buttonIngreEpp.Location = new System.Drawing.Point(478, 188);
-            this.buttonIngreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonIngreEpp.Location = new System.Drawing.Point(637, 231);
+            this.buttonIngreEpp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonIngreEpp.Name = "buttonIngreEpp";
-            this.buttonIngreEpp.Size = new System.Drawing.Size(83, 35);
+            this.buttonIngreEpp.Size = new System.Drawing.Size(111, 43);
             this.buttonIngreEpp.TabIndex = 27;
             this.buttonIngreEpp.Text = "Ingreso Almacen";
             this.buttonIngreEpp.UseVisualStyleBackColor = true;
@@ -871,98 +863,292 @@ namespace BracoProyectos
             // labelFactEppIngre
             // 
             this.labelFactEppIngre.AutoSize = true;
-            this.labelFactEppIngre.Location = new System.Drawing.Point(297, 154);
-            this.labelFactEppIngre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelFactEppIngre.Location = new System.Drawing.Point(396, 190);
             this.labelFactEppIngre.Name = "labelFactEppIngre";
-            this.labelFactEppIngre.Size = new System.Drawing.Size(43, 13);
+            this.labelFactEppIngre.Size = new System.Drawing.Size(56, 17);
             this.labelFactEppIngre.TabIndex = 29;
             this.labelFactEppIngre.Text = "Factura";
             // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(342, 77);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox3.Location = new System.Drawing.Point(456, 95);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(221, 21);
+            this.comboBox3.Size = new System.Drawing.Size(293, 24);
             this.comboBox3.TabIndex = 21;
             // 
             // splitter2
             // 
-            this.splitter2.Location = new System.Drawing.Point(2, 3);
-            this.splitter2.Margin = new System.Windows.Forms.Padding(2);
+            this.splitter2.Location = new System.Drawing.Point(3, 4);
+            this.splitter2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(283, 238);
+            this.splitter2.Size = new System.Drawing.Size(377, 295);
             this.splitter2.TabIndex = 43;
             this.splitter2.TabStop = false;
             // 
             // tabPagePersonal
             // 
             this.tabPagePersonal.BackColor = System.Drawing.Color.Transparent;
+            this.tabPagePersonal.Controls.Add(this.buttonElimPers);
+            this.tabPagePersonal.Controls.Add(this.buttonActzPerso);
+            this.tabPagePersonal.Controls.Add(this.buttonBuscPers);
+            this.tabPagePersonal.Controls.Add(this.buttonCrearPers);
+            this.tabPagePersonal.Controls.Add(this.textBoxCelEmerg);
+            this.tabPagePersonal.Controls.Add(this.labelCelEmerg);
+            this.tabPagePersonal.Controls.Add(this.textBoxPersEmerg);
+            this.tabPagePersonal.Controls.Add(this.labelPersoEmerg);
+            this.tabPagePersonal.Controls.Add(this.textBoxRh);
+            this.tabPagePersonal.Controls.Add(this.labelRh);
+            this.tabPagePersonal.Controls.Add(this.labelFechaIngre);
+            this.tabPagePersonal.Controls.Add(this.dateTimePickerPersIngre);
+            this.tabPagePersonal.Controls.Add(this.textBoxDirec);
+            this.tabPagePersonal.Controls.Add(this.labelDirec);
+            this.tabPagePersonal.Controls.Add(this.textBoxCelular);
+            this.tabPagePersonal.Controls.Add(this.labelCel);
+            this.tabPagePersonal.Controls.Add(this.textBox2);
+            this.tabPagePersonal.Controls.Add(this.labelCargo);
+            this.tabPagePersonal.Controls.Add(this.textBoxDocument);
+            this.tabPagePersonal.Controls.Add(this.labelDocument);
             this.tabPagePersonal.Controls.Add(this.textBoxApelliEmp);
             this.tabPagePersonal.Controls.Add(this.label3);
             this.tabPagePersonal.Controls.Add(this.labelApelliPersonal);
             this.tabPagePersonal.Controls.Add(this.labelNomEmpl);
             this.tabPagePersonal.Controls.Add(this.textBoxNomEmple);
-            this.tabPagePersonal.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePersonal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tabPagePersonal.Location = new System.Drawing.Point(4, 25);
+            this.tabPagePersonal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPagePersonal.Name = "tabPagePersonal";
-            this.tabPagePersonal.Size = new System.Drawing.Size(572, 244);
+            this.tabPagePersonal.Size = new System.Drawing.Size(765, 303);
             this.tabPagePersonal.TabIndex = 3;
             this.tabPagePersonal.Text = "Personal";
+            this.tabPagePersonal.Click += new System.EventHandler(this.tabPagePersonal_Click);
             // 
-            // textBoxNomEmple
+            // labelFechaIngre
             // 
-            this.textBoxNomEmple.Location = new System.Drawing.Point(69, 51);
-            this.textBoxNomEmple.Name = "textBoxNomEmple";
-            this.textBoxNomEmple.Size = new System.Drawing.Size(131, 20);
-            this.textBoxNomEmple.TabIndex = 0;
+            this.labelFechaIngre.AutoSize = true;
+            this.labelFechaIngre.Location = new System.Drawing.Point(263, 200);
+            this.labelFechaIngre.Name = "labelFechaIngre";
+            this.labelFechaIngre.Size = new System.Drawing.Size(98, 17);
+            this.labelFechaIngre.TabIndex = 14;
+            this.labelFechaIngre.Text = "Fecha Ingreso";
             // 
-            // labelNomEmpl
+            // dateTimePickerPersIngre
             // 
-            this.labelNomEmpl.AutoSize = true;
-            this.labelNomEmpl.Location = new System.Drawing.Point(19, 54);
-            this.labelNomEmpl.Name = "labelNomEmpl";
-            this.labelNomEmpl.Size = new System.Drawing.Size(44, 13);
-            this.labelNomEmpl.TabIndex = 1;
-            this.labelNomEmpl.Text = "Nombre";
+            this.dateTimePickerPersIngre.Location = new System.Drawing.Point(367, 200);
+            this.dateTimePickerPersIngre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerPersIngre.Name = "dateTimePickerPersIngre";
+            this.dateTimePickerPersIngre.Size = new System.Drawing.Size(228, 22);
+            this.dateTimePickerPersIngre.TabIndex = 13;
             // 
-            // labelApelliPersonal
+            // textBoxDirec
             // 
-            this.labelApelliPersonal.AutoSize = true;
-            this.labelApelliPersonal.Location = new System.Drawing.Point(220, 54);
-            this.labelApelliPersonal.Name = "labelApelliPersonal";
-            this.labelApelliPersonal.Size = new System.Drawing.Size(44, 13);
-            this.labelApelliPersonal.TabIndex = 2;
-            this.labelApelliPersonal.Text = "Apellido";
+            this.textBoxDirec.Location = new System.Drawing.Point(331, 107);
+            this.textBoxDirec.Name = "textBoxDirec";
+            this.textBoxDirec.Size = new System.Drawing.Size(183, 22);
+            this.textBoxDirec.TabIndex = 12;
+            // 
+            // labelDirec
+            // 
+            this.labelDirec.AutoSize = true;
+            this.labelDirec.Location = new System.Drawing.Point(263, 108);
+            this.labelDirec.Name = "labelDirec";
+            this.labelDirec.Size = new System.Drawing.Size(67, 17);
+            this.labelDirec.TabIndex = 11;
+            this.labelDirec.Text = "Direccion";
+            // 
+            // textBoxCelular
+            // 
+            this.textBoxCelular.Location = new System.Drawing.Point(63, 105);
+            this.textBoxCelular.Name = "textBoxCelular";
+            this.textBoxCelular.Size = new System.Drawing.Size(189, 22);
+            this.textBoxCelular.TabIndex = 10;
+            // 
+            // labelCel
+            // 
+            this.labelCel.AutoSize = true;
+            this.labelCel.Location = new System.Drawing.Point(12, 106);
+            this.labelCel.Name = "labelCel";
+            this.labelCel.Size = new System.Drawing.Size(52, 17);
+            this.labelCel.TabIndex = 9;
+            this.labelCel.Text = "Celular";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(63, 197);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(189, 22);
+            this.textBox2.TabIndex = 8;
+            // 
+            // labelCargo
+            // 
+            this.labelCargo.AutoSize = true;
+            this.labelCargo.Location = new System.Drawing.Point(12, 198);
+            this.labelCargo.Name = "labelCargo";
+            this.labelCargo.Size = new System.Drawing.Size(46, 17);
+            this.labelCargo.TabIndex = 7;
+            this.labelCargo.Text = "Cargo";
+            // 
+            // textBoxDocument
+            // 
+            this.textBoxDocument.Location = new System.Drawing.Point(610, 59);
+            this.textBoxDocument.Name = "textBoxDocument";
+            this.textBoxDocument.Size = new System.Drawing.Size(144, 22);
+            this.textBoxDocument.TabIndex = 6;
+            // 
+            // labelDocument
+            // 
+            this.labelDocument.AutoSize = true;
+            this.labelDocument.Location = new System.Drawing.Point(526, 60);
+            this.labelDocument.Name = "labelDocument";
+            this.labelDocument.Size = new System.Drawing.Size(80, 17);
+            this.labelDocument.TabIndex = 5;
+            this.labelDocument.Text = "Documento";
+            // 
+            // textBoxApelliEmp
+            // 
+            this.textBoxApelliEmp.Location = new System.Drawing.Point(331, 57);
+            this.textBoxApelliEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxApelliEmp.Name = "textBoxApelliEmp";
+            this.textBoxApelliEmp.Size = new System.Drawing.Size(183, 22);
+            this.textBoxApelliEmp.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(192, 16);
+            this.label3.Location = new System.Drawing.Point(256, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 13);
+            this.label3.Size = new System.Drawing.Size(203, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "INGRESO PERSONAL NUEVO";
             // 
-            // textBoxApelliEmp
+            // labelApelliPersonal
             // 
-            this.textBoxApelliEmp.Location = new System.Drawing.Point(271, 51);
-            this.textBoxApelliEmp.Name = "textBoxApelliEmp";
-            this.textBoxApelliEmp.Size = new System.Drawing.Size(138, 20);
-            this.textBoxApelliEmp.TabIndex = 4;
+            this.labelApelliPersonal.AutoSize = true;
+            this.labelApelliPersonal.Location = new System.Drawing.Point(263, 60);
+            this.labelApelliPersonal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelApelliPersonal.Name = "labelApelliPersonal";
+            this.labelApelliPersonal.Size = new System.Drawing.Size(65, 17);
+            this.labelApelliPersonal.TabIndex = 2;
+            this.labelApelliPersonal.Text = "Apellidos";
+            // 
+            // labelNomEmpl
+            // 
+            this.labelNomEmpl.AutoSize = true;
+            this.labelNomEmpl.Location = new System.Drawing.Point(12, 60);
+            this.labelNomEmpl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNomEmpl.Name = "labelNomEmpl";
+            this.labelNomEmpl.Size = new System.Drawing.Size(65, 17);
+            this.labelNomEmpl.TabIndex = 1;
+            this.labelNomEmpl.Text = "Nombres";
+            // 
+            // textBoxNomEmple
+            // 
+            this.textBoxNomEmple.Location = new System.Drawing.Point(79, 57);
+            this.textBoxNomEmple.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNomEmple.Name = "textBoxNomEmple";
+            this.textBoxNomEmple.Size = new System.Drawing.Size(173, 22);
+            this.textBoxNomEmple.TabIndex = 0;
+            // 
+            // textBoxRh
+            // 
+            this.textBoxRh.Location = new System.Drawing.Point(561, 106);
+            this.textBoxRh.Name = "textBoxRh";
+            this.textBoxRh.Size = new System.Drawing.Size(79, 22);
+            this.textBoxRh.TabIndex = 16;
+            // 
+            // labelRh
+            // 
+            this.labelRh.AutoSize = true;
+            this.labelRh.Location = new System.Drawing.Point(527, 109);
+            this.labelRh.Name = "labelRh";
+            this.labelRh.Size = new System.Drawing.Size(28, 17);
+            this.labelRh.TabIndex = 15;
+            this.labelRh.Text = "RH";
+            // 
+            // textBoxCelEmerg
+            // 
+            this.textBoxCelEmerg.Location = new System.Drawing.Point(535, 156);
+            this.textBoxCelEmerg.Name = "textBoxCelEmerg";
+            this.textBoxCelEmerg.Size = new System.Drawing.Size(183, 22);
+            this.textBoxCelEmerg.TabIndex = 20;
+            // 
+            // labelCelEmerg
+            // 
+            this.labelCelEmerg.AutoSize = true;
+            this.labelCelEmerg.Location = new System.Drawing.Point(398, 156);
+            this.labelCelEmerg.Name = "labelCelEmerg";
+            this.labelCelEmerg.Size = new System.Drawing.Size(131, 17);
+            this.labelCelEmerg.TabIndex = 19;
+            this.labelCelEmerg.Text = "Celular Emergencia";
+            // 
+            // textBoxPersEmerg
+            // 
+            this.textBoxPersEmerg.Location = new System.Drawing.Point(154, 153);
+            this.textBoxPersEmerg.Name = "textBoxPersEmerg";
+            this.textBoxPersEmerg.Size = new System.Drawing.Size(228, 22);
+            this.textBoxPersEmerg.TabIndex = 18;
+            // 
+            // labelPersoEmerg
+            // 
+            this.labelPersoEmerg.AutoSize = true;
+            this.labelPersoEmerg.Location = new System.Drawing.Point(12, 153);
+            this.labelPersoEmerg.Name = "labelPersoEmerg";
+            this.labelPersoEmerg.Size = new System.Drawing.Size(136, 17);
+            this.labelPersoEmerg.TabIndex = 17;
+            this.labelPersoEmerg.Text = "Familiar Emergencia";
+            // 
+            // buttonElimPers
+            // 
+            this.buttonElimPers.Location = new System.Drawing.Point(621, 246);
+            this.buttonElimPers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonElimPers.Name = "buttonElimPers";
+            this.buttonElimPers.Size = new System.Drawing.Size(111, 43);
+            this.buttonElimPers.TabIndex = 24;
+            this.buttonElimPers.Text = "Eliminar Personal";
+            this.buttonElimPers.UseVisualStyleBackColor = true;
+            // 
+            // buttonActzPerso
+            // 
+            this.buttonActzPerso.Location = new System.Drawing.Point(438, 246);
+            this.buttonActzPerso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonActzPerso.Name = "buttonActzPerso";
+            this.buttonActzPerso.Size = new System.Drawing.Size(111, 43);
+            this.buttonActzPerso.TabIndex = 23;
+            this.buttonActzPerso.Text = "Actualizar Personal";
+            this.buttonActzPerso.UseVisualStyleBackColor = true;
+            // 
+            // buttonBuscPers
+            // 
+            this.buttonBuscPers.Location = new System.Drawing.Point(227, 246);
+            this.buttonBuscPers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonBuscPers.Name = "buttonBuscPers";
+            this.buttonBuscPers.Size = new System.Drawing.Size(111, 43);
+            this.buttonBuscPers.TabIndex = 22;
+            this.buttonBuscPers.Text = "Buscar Personal";
+            this.buttonBuscPers.UseVisualStyleBackColor = true;
+            // 
+            // buttonCrearPers
+            // 
+            this.buttonCrearPers.Location = new System.Drawing.Point(33, 246);
+            this.buttonCrearPers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCrearPers.Name = "buttonCrearPers";
+            this.buttonCrearPers.Size = new System.Drawing.Size(111, 43);
+            this.buttonCrearPers.TabIndex = 21;
+            this.buttonCrearPers.Text = "Crear Personal";
+            this.buttonCrearPers.UseVisualStyleBackColor = true;
             // 
             // BracoProyectos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 276);
+            this.ClientSize = new System.Drawing.Size(780, 340);
             this.Controls.Add(this.tabControlProyecto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "BracoProyectos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Braco Proyectos";
+            this.Text = "x";
             this.Load += new System.EventHandler(this.BracoProyectos_Load);
             this.tabControlProyecto.ResumeLayout(false);
             this.tabPageProyecto.ResumeLayout(false);
@@ -989,7 +1175,7 @@ namespace BracoProyectos
         private System.Windows.Forms.ComboBox comboBoxProduc;
         private System.Windows.Forms.Label labelProduc;
         private System.Windows.Forms.Label labelFechaInicio;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerIngreProyec;
         private System.Windows.Forms.TextBox textBoxCantFabricar;
         private System.Windows.Forms.Label labelCantFabricar;
         private System.Windows.Forms.TextBox textBoxOrdenCompra;
@@ -1059,6 +1245,26 @@ namespace BracoProyectos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelApelliPersonal;
         private System.Windows.Forms.Label labelNomEmpl;
+        private System.Windows.Forms.TextBox textBoxDocument;
+        private System.Windows.Forms.Label labelDocument;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelCargo;
+        private System.Windows.Forms.TextBox textBoxCelular;
+        private System.Windows.Forms.Label labelCel;
+        private System.Windows.Forms.TextBox textBoxDirec;
+        private System.Windows.Forms.Label labelDirec;
+        private System.Windows.Forms.Label labelFechaIngre;
+        private System.Windows.Forms.DateTimePicker dateTimePickerPersIngre;
+        private System.Windows.Forms.TextBox textBoxRh;
+        private System.Windows.Forms.Label labelRh;
+        private System.Windows.Forms.TextBox textBoxCelEmerg;
+        private System.Windows.Forms.Label labelCelEmerg;
+        private System.Windows.Forms.TextBox textBoxPersEmerg;
+        private System.Windows.Forms.Label labelPersoEmerg;
+        private System.Windows.Forms.Button buttonElimPers;
+        private System.Windows.Forms.Button buttonActzPerso;
+        private System.Windows.Forms.Button buttonBuscPers;
+        private System.Windows.Forms.Button buttonCrearPers;
     }
 }
 

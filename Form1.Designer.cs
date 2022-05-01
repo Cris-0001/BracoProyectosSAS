@@ -45,7 +45,7 @@ namespace BracoProyectos
             this.textBoxCantFabricar = new System.Windows.Forms.TextBox();
             this.labelCantFabricar = new System.Windows.Forms.Label();
             this.labelFechaInicio = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerIngreProyec = new System.Windows.Forms.DateTimePicker();
             this.labelProduc = new System.Windows.Forms.Label();
             this.comboBoxProduc = new System.Windows.Forms.ComboBox();
             this.textBoxOT = new System.Windows.Forms.TextBox();
@@ -105,11 +105,35 @@ namespace BracoProyectos
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.splitter2 = new System.Windows.Forms.Splitter();
             this.tabPagePersonal = new System.Windows.Forms.TabPage();
-            this.textBoxNomEmple = new System.Windows.Forms.TextBox();
-            this.labelNomEmpl = new System.Windows.Forms.Label();
-            this.labelApelliPersonal = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.buttonElimPers = new System.Windows.Forms.Button();
+            this.buttonActzPerso = new System.Windows.Forms.Button();
+            this.buttonBuscPers = new System.Windows.Forms.Button();
+            this.buttonCrearPers = new System.Windows.Forms.Button();
+            this.textBoxCelEmerg = new System.Windows.Forms.TextBox();
+            this.labelCelEmerg = new System.Windows.Forms.Label();
+            this.textBoxPersEmerg = new System.Windows.Forms.TextBox();
+            this.labelPersoEmerg = new System.Windows.Forms.Label();
+            this.textBoxRh = new System.Windows.Forms.TextBox();
+            this.labelRh = new System.Windows.Forms.Label();
+            this.labelFechaIngre = new System.Windows.Forms.Label();
+            this.dateTimePickerPersIngre = new System.Windows.Forms.DateTimePicker();
+            this.textBoxDirec = new System.Windows.Forms.TextBox();
+            this.labelDirec = new System.Windows.Forms.Label();
+            this.textBoxCelular = new System.Windows.Forms.TextBox();
+            this.labelCel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelCargo = new System.Windows.Forms.Label();
+            this.textBoxDocument = new System.Windows.Forms.TextBox();
+            this.labelDocument = new System.Windows.Forms.Label();
             this.textBoxApelliEmp = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelApelliPersonal = new System.Windows.Forms.Label();
+            this.labelNomEmpl = new System.Windows.Forms.Label();
+            this.textBoxNomEmple = new System.Windows.Forms.TextBox();
+            this.textBoxValorProyec = new System.Windows.Forms.TextBox();
+            this.labelValorProyec = new System.Windows.Forms.Label();
+            this.listBoxlistProyec = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControlProyecto.SuspendLayout();
             this.tabPageProyecto.SuspendLayout();
             this.tabPageInsumos.SuspendLayout();
@@ -127,11 +151,15 @@ namespace BracoProyectos
             this.tabControlProyecto.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabControlProyecto.Name = "tabControlProyecto";
             this.tabControlProyecto.SelectedIndex = 0;
-            this.tabControlProyecto.Size = new System.Drawing.Size(580, 270);
+            this.tabControlProyecto.Size = new System.Drawing.Size(580, 523);
             this.tabControlProyecto.TabIndex = 0;
             // 
             // tabPageProyecto
             // 
+            this.tabPageProyecto.Controls.Add(this.label4);
+            this.tabPageProyecto.Controls.Add(this.listBoxlistProyec);
+            this.tabPageProyecto.Controls.Add(this.textBoxValorProyec);
+            this.tabPageProyecto.Controls.Add(this.labelValorProyec);
             this.tabPageProyecto.Controls.Add(this.buttonEliminarProyec);
             this.tabPageProyecto.Controls.Add(this.buttonActualizarProyec);
             this.tabPageProyecto.Controls.Add(this.buttonBuscarProyec);
@@ -145,7 +173,7 @@ namespace BracoProyectos
             this.tabPageProyecto.Controls.Add(this.textBoxCantFabricar);
             this.tabPageProyecto.Controls.Add(this.labelCantFabricar);
             this.tabPageProyecto.Controls.Add(this.labelFechaInicio);
-            this.tabPageProyecto.Controls.Add(this.dateTimePicker1);
+            this.tabPageProyecto.Controls.Add(this.dateTimePickerIngreProyec);
             this.tabPageProyecto.Controls.Add(this.labelProduc);
             this.tabPageProyecto.Controls.Add(this.comboBoxProduc);
             this.tabPageProyecto.Controls.Add(this.textBoxOT);
@@ -154,50 +182,53 @@ namespace BracoProyectos
             this.tabPageProyecto.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPageProyecto.Name = "tabPageProyecto";
             this.tabPageProyecto.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPageProyecto.Size = new System.Drawing.Size(572, 244);
+            this.tabPageProyecto.Size = new System.Drawing.Size(572, 497);
             this.tabPageProyecto.TabIndex = 0;
             this.tabPageProyecto.Text = "Proyecto";
             this.tabPageProyecto.UseVisualStyleBackColor = true;
+            this.tabPageProyecto.Click += new System.EventHandler(this.tabPageProyecto_Click);
             // 
             // buttonEliminarProyec
             // 
             this.buttonEliminarProyec.Location = new System.Drawing.Point(458, 190);
-            this.buttonEliminarProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEliminarProyec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonEliminarProyec.Name = "buttonEliminarProyec";
             this.buttonEliminarProyec.Size = new System.Drawing.Size(83, 35);
             this.buttonEliminarProyec.TabIndex = 17;
-            this.buttonEliminarProyec.Text = "Eliminar";
+            this.buttonEliminarProyec.Text = "Eliminar Proyecto";
             this.buttonEliminarProyec.UseVisualStyleBackColor = true;
             // 
             // buttonActualizarProyec
             // 
             this.buttonActualizarProyec.Location = new System.Drawing.Point(321, 190);
-            this.buttonActualizarProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonActualizarProyec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonActualizarProyec.Name = "buttonActualizarProyec";
             this.buttonActualizarProyec.Size = new System.Drawing.Size(83, 35);
             this.buttonActualizarProyec.TabIndex = 16;
-            this.buttonActualizarProyec.Text = "Actualizar";
+            this.buttonActualizarProyec.Text = "Actualizar Proyecto";
             this.buttonActualizarProyec.UseVisualStyleBackColor = true;
+            this.buttonActualizarProyec.Click += new System.EventHandler(this.buttonActualizarProyec_Click);
             // 
             // buttonBuscarProyec
             // 
             this.buttonBuscarProyec.Location = new System.Drawing.Point(163, 190);
-            this.buttonBuscarProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBuscarProyec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonBuscarProyec.Name = "buttonBuscarProyec";
             this.buttonBuscarProyec.Size = new System.Drawing.Size(83, 35);
             this.buttonBuscarProyec.TabIndex = 15;
-            this.buttonBuscarProyec.Text = "Buscar";
+            this.buttonBuscarProyec.Text = "Buscar Proyecto";
             this.buttonBuscarProyec.UseVisualStyleBackColor = true;
             // 
             // buttonCrearProyec
             // 
             this.buttonCrearProyec.Location = new System.Drawing.Point(17, 190);
-            this.buttonCrearProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCrearProyec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCrearProyec.Name = "buttonCrearProyec";
             this.buttonCrearProyec.Size = new System.Drawing.Size(83, 35);
             this.buttonCrearProyec.TabIndex = 14;
-            this.buttonCrearProyec.Text = "Crear";
+            this.buttonCrearProyec.Text = "Crear Proyecto";
             this.buttonCrearProyec.UseVisualStyleBackColor = true;
+            this.buttonCrearProyec.Click += new System.EventHandler(this.buttonCrearProyec_Click);
             // 
             // comboBoxCliente
             // 
@@ -205,8 +236,8 @@ namespace BracoProyectos
             this.comboBoxCliente.Items.AddRange(new object[] {
             "Ectricol",
             "Melexa"});
-            this.comboBoxCliente.Location = new System.Drawing.Point(368, 18);
-            this.comboBoxCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxCliente.Location = new System.Drawing.Point(345, 54);
+            this.comboBoxCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxCliente.Name = "comboBoxCliente";
             this.comboBoxCliente.Size = new System.Drawing.Size(82, 21);
             this.comboBoxCliente.TabIndex = 13;
@@ -214,7 +245,7 @@ namespace BracoProyectos
             // labelCliente
             // 
             this.labelCliente.AutoSize = true;
-            this.labelCliente.Location = new System.Drawing.Point(325, 22);
+            this.labelCliente.Location = new System.Drawing.Point(302, 58);
             this.labelCliente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCliente.Name = "labelCliente";
             this.labelCliente.Size = new System.Drawing.Size(39, 13);
@@ -224,7 +255,7 @@ namespace BracoProyectos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(177, 68);
+            this.label1.Location = new System.Drawing.Point(177, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
@@ -234,7 +265,7 @@ namespace BracoProyectos
             // labelOrdenCompra
             // 
             this.labelOrdenCompra.AutoSize = true;
-            this.labelOrdenCompra.Location = new System.Drawing.Point(134, 23);
+            this.labelOrdenCompra.Location = new System.Drawing.Point(134, 59);
             this.labelOrdenCompra.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelOrdenCompra.Name = "labelOrdenCompra";
             this.labelOrdenCompra.Size = new System.Drawing.Size(22, 13);
@@ -243,24 +274,24 @@ namespace BracoProyectos
             // 
             // textBoxDescripProyec
             // 
-            this.textBoxDescripProyec.Location = new System.Drawing.Point(255, 65);
-            this.textBoxDescripProyec.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxDescripProyec.Location = new System.Drawing.Point(255, 101);
+            this.textBoxDescripProyec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxDescripProyec.Name = "textBoxDescripProyec";
-            this.textBoxDescripProyec.Size = new System.Drawing.Size(316, 20);
+            this.textBoxDescripProyec.Size = new System.Drawing.Size(309, 20);
             this.textBoxDescripProyec.TabIndex = 9;
             // 
             // textBoxOrdenCompra
             // 
-            this.textBoxOrdenCompra.Location = new System.Drawing.Point(163, 19);
-            this.textBoxOrdenCompra.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxOrdenCompra.Location = new System.Drawing.Point(163, 55);
+            this.textBoxOrdenCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxOrdenCompra.Name = "textBoxOrdenCompra";
             this.textBoxOrdenCompra.Size = new System.Drawing.Size(125, 20);
             this.textBoxOrdenCompra.TabIndex = 8;
             // 
             // textBoxCantFabricar
             // 
-            this.textBoxCantFabricar.Location = new System.Drawing.Point(67, 111);
-            this.textBoxCantFabricar.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCantFabricar.Location = new System.Drawing.Point(67, 147);
+            this.textBoxCantFabricar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCantFabricar.Name = "textBoxCantFabricar";
             this.textBoxCantFabricar.Size = new System.Drawing.Size(59, 20);
             this.textBoxCantFabricar.TabIndex = 7;
@@ -268,7 +299,7 @@ namespace BracoProyectos
             // labelCantFabricar
             // 
             this.labelCantFabricar.AutoSize = true;
-            this.labelCantFabricar.Location = new System.Drawing.Point(14, 115);
+            this.labelCantFabricar.Location = new System.Drawing.Point(14, 151);
             this.labelCantFabricar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCantFabricar.Name = "labelCantFabricar";
             this.labelCantFabricar.Size = new System.Drawing.Size(49, 13);
@@ -278,25 +309,25 @@ namespace BracoProyectos
             // labelFechaInicio
             // 
             this.labelFechaInicio.AutoSize = true;
-            this.labelFechaInicio.Location = new System.Drawing.Point(153, 115);
+            this.labelFechaInicio.Location = new System.Drawing.Point(153, 151);
             this.labelFechaInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFechaInicio.Name = "labelFechaInicio";
             this.labelFechaInicio.Size = new System.Drawing.Size(65, 13);
             this.labelFechaInicio.TabIndex = 5;
             this.labelFechaInicio.Text = "Fecha Inicio";
             // 
-            // dateTimePicker1
+            // dateTimePickerIngreProyec
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(233, 111);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePickerIngreProyec.Location = new System.Drawing.Point(233, 147);
+            this.dateTimePickerIngreProyec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePickerIngreProyec.Name = "dateTimePickerIngreProyec";
+            this.dateTimePickerIngreProyec.Size = new System.Drawing.Size(172, 20);
+            this.dateTimePickerIngreProyec.TabIndex = 4;
             // 
             // labelProduc
             // 
             this.labelProduc.AutoSize = true;
-            this.labelProduc.Location = new System.Drawing.Point(14, 69);
+            this.labelProduc.Location = new System.Drawing.Point(14, 105);
             this.labelProduc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelProduc.Name = "labelProduc";
             this.labelProduc.Size = new System.Drawing.Size(50, 13);
@@ -310,7 +341,7 @@ namespace BracoProyectos
             "Shelter",
             "Skid",
             "Otro"});
-            this.comboBoxProduc.Location = new System.Drawing.Point(67, 64);
+            this.comboBoxProduc.Location = new System.Drawing.Point(67, 100);
             this.comboBoxProduc.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBoxProduc.Name = "comboBoxProduc";
             this.comboBoxProduc.Size = new System.Drawing.Size(92, 21);
@@ -318,7 +349,7 @@ namespace BracoProyectos
             // 
             // textBoxOT
             // 
-            this.textBoxOT.Location = new System.Drawing.Point(40, 19);
+            this.textBoxOT.Location = new System.Drawing.Point(40, 55);
             this.textBoxOT.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBoxOT.Name = "textBoxOT";
             this.textBoxOT.Size = new System.Drawing.Size(85, 20);
@@ -327,7 +358,7 @@ namespace BracoProyectos
             // OT
             // 
             this.OT.AutoSize = true;
-            this.OT.Location = new System.Drawing.Point(14, 22);
+            this.OT.Location = new System.Drawing.Point(14, 58);
             this.OT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.OT.Name = "OT";
             this.OT.Size = new System.Drawing.Size(22, 13);
@@ -367,7 +398,7 @@ namespace BracoProyectos
             this.tabPageInsumos.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPageInsumos.Name = "tabPageInsumos";
             this.tabPageInsumos.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPageInsumos.Size = new System.Drawing.Size(572, 244);
+            this.tabPageInsumos.Size = new System.Drawing.Size(572, 497);
             this.tabPageInsumos.TabIndex = 1;
             this.tabPageInsumos.Text = "Insumos";
             this.tabPageInsumos.UseVisualStyleBackColor = true;
@@ -376,7 +407,7 @@ namespace BracoProyectos
             // textBoxCantIngreso
             // 
             this.textBoxCantIngreso.Location = new System.Drawing.Point(350, 188);
-            this.textBoxCantIngreso.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCantIngreso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCantIngreso.Name = "textBoxCantIngreso";
             this.textBoxCantIngreso.Size = new System.Drawing.Size(68, 20);
             this.textBoxCantIngreso.TabIndex = 16;
@@ -384,7 +415,7 @@ namespace BracoProyectos
             // textBoxCantCrear
             // 
             this.textBoxCantCrear.Location = new System.Drawing.Point(64, 150);
-            this.textBoxCantCrear.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCantCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCantCrear.Name = "textBoxCantCrear";
             this.textBoxCantCrear.Size = new System.Drawing.Size(68, 20);
             this.textBoxCantCrear.TabIndex = 15;
@@ -412,7 +443,7 @@ namespace BracoProyectos
             // buttonElimInsum
             // 
             this.buttonElimInsum.Location = new System.Drawing.Point(210, 188);
-            this.buttonElimInsum.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonElimInsum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonElimInsum.Name = "buttonElimInsum";
             this.buttonElimInsum.Size = new System.Drawing.Size(61, 35);
             this.buttonElimInsum.TabIndex = 12;
@@ -422,7 +453,7 @@ namespace BracoProyectos
             // buttonBuscInsumo
             // 
             this.buttonBuscInsumo.Location = new System.Drawing.Point(79, 188);
-            this.buttonBuscInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBuscInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonBuscInsumo.Name = "buttonBuscInsumo";
             this.buttonBuscInsumo.Size = new System.Drawing.Size(61, 35);
             this.buttonBuscInsumo.TabIndex = 11;
@@ -432,7 +463,7 @@ namespace BracoProyectos
             // buttonEditInsum
             // 
             this.buttonEditInsum.Location = new System.Drawing.Point(145, 188);
-            this.buttonEditInsum.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditInsum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonEditInsum.Name = "buttonEditInsum";
             this.buttonEditInsum.Size = new System.Drawing.Size(61, 35);
             this.buttonEditInsum.TabIndex = 10;
@@ -442,7 +473,7 @@ namespace BracoProyectos
             // buttonCrearInsumo
             // 
             this.buttonCrearInsumo.Location = new System.Drawing.Point(14, 188);
-            this.buttonCrearInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCrearInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCrearInsumo.Name = "buttonCrearInsumo";
             this.buttonCrearInsumo.Size = new System.Drawing.Size(61, 35);
             this.buttonCrearInsumo.TabIndex = 7;
@@ -462,7 +493,7 @@ namespace BracoProyectos
             // textBoxCrearProvee
             // 
             this.textBoxCrearProvee.Location = new System.Drawing.Point(69, 114);
-            this.textBoxCrearProvee.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearProvee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCrearProvee.Name = "textBoxCrearProvee";
             this.textBoxCrearProvee.Size = new System.Drawing.Size(205, 20);
             this.textBoxCrearProvee.TabIndex = 6;
@@ -470,7 +501,7 @@ namespace BracoProyectos
             // textBoxCodigInsumo
             // 
             this.textBoxCodigInsumo.Location = new System.Drawing.Point(381, 49);
-            this.textBoxCodigInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodigInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCodigInsumo.Name = "textBoxCodigInsumo";
             this.textBoxCodigInsumo.Size = new System.Drawing.Size(181, 20);
             this.textBoxCodigInsumo.TabIndex = 8;
@@ -478,7 +509,7 @@ namespace BracoProyectos
             // textBoxCrearInsumo
             // 
             this.textBoxCrearInsumo.Location = new System.Drawing.Point(57, 79);
-            this.textBoxCrearInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCrearInsumo.Name = "textBoxCrearInsumo";
             this.textBoxCrearInsumo.Size = new System.Drawing.Size(217, 20);
             this.textBoxCrearInsumo.TabIndex = 5;
@@ -527,7 +558,7 @@ namespace BracoProyectos
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(355, 114);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(208, 21);
             this.comboBox1.TabIndex = 3;
@@ -535,7 +566,7 @@ namespace BracoProyectos
             // textBoxCodInsumCrear
             // 
             this.textBoxCodInsumCrear.Location = new System.Drawing.Point(90, 49);
-            this.textBoxCodInsumCrear.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodInsumCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCodInsumCrear.Name = "textBoxCodInsumCrear";
             this.textBoxCodInsumCrear.Size = new System.Drawing.Size(184, 20);
             this.textBoxCodInsumCrear.TabIndex = 1;
@@ -543,7 +574,7 @@ namespace BracoProyectos
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(343, 150);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(220, 20);
             this.textBox1.TabIndex = 6;
@@ -581,7 +612,7 @@ namespace BracoProyectos
             // buttonIngresoInsumo
             // 
             this.buttonIngresoInsumo.Location = new System.Drawing.Point(478, 188);
-            this.buttonIngresoInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonIngresoInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonIngresoInsumo.Name = "buttonIngresoInsumo";
             this.buttonIngresoInsumo.Size = new System.Drawing.Size(83, 35);
             this.buttonIngresoInsumo.TabIndex = 4;
@@ -602,7 +633,7 @@ namespace BracoProyectos
             // 
             this.comboBoxNomInsumo.FormattingEnabled = true;
             this.comboBoxNomInsumo.Location = new System.Drawing.Point(342, 77);
-            this.comboBoxNomInsumo.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxNomInsumo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxNomInsumo.Name = "comboBoxNomInsumo";
             this.comboBoxNomInsumo.Size = new System.Drawing.Size(221, 21);
             this.comboBoxNomInsumo.TabIndex = 1;
@@ -610,9 +641,9 @@ namespace BracoProyectos
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(2, 3);
-            this.splitter1.Margin = new System.Windows.Forms.Padding(2);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(283, 238);
+            this.splitter1.Size = new System.Drawing.Size(283, 491);
             this.splitter1.TabIndex = 17;
             this.splitter1.TabStop = false;
             // 
@@ -648,7 +679,7 @@ namespace BracoProyectos
             this.tabPageEpp.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPageEpp.Name = "tabPageEpp";
             this.tabPageEpp.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tabPageEpp.Size = new System.Drawing.Size(572, 244);
+            this.tabPageEpp.Size = new System.Drawing.Size(572, 497);
             this.tabPageEpp.TabIndex = 2;
             this.tabPageEpp.Text = "EPP";
             this.tabPageEpp.UseVisualStyleBackColor = true;
@@ -656,7 +687,7 @@ namespace BracoProyectos
             // textBoxIngreCantEpp
             // 
             this.textBoxIngreCantEpp.Location = new System.Drawing.Point(350, 188);
-            this.textBoxIngreCantEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxIngreCantEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxIngreCantEpp.Name = "textBoxIngreCantEpp";
             this.textBoxIngreCantEpp.Size = new System.Drawing.Size(68, 20);
             this.textBoxIngreCantEpp.TabIndex = 42;
@@ -664,7 +695,7 @@ namespace BracoProyectos
             // textBoxCrearCant
             // 
             this.textBoxCrearCant.Location = new System.Drawing.Point(64, 150);
-            this.textBoxCrearCant.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearCant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCrearCant.Name = "textBoxCrearCant";
             this.textBoxCrearCant.Size = new System.Drawing.Size(68, 20);
             this.textBoxCrearCant.TabIndex = 41;
@@ -692,7 +723,7 @@ namespace BracoProyectos
             // buttonElimEpp
             // 
             this.buttonElimEpp.Location = new System.Drawing.Point(210, 188);
-            this.buttonElimEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonElimEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonElimEpp.Name = "buttonElimEpp";
             this.buttonElimEpp.Size = new System.Drawing.Size(61, 35);
             this.buttonElimEpp.TabIndex = 38;
@@ -702,7 +733,7 @@ namespace BracoProyectos
             // buttonBuscarEpp
             // 
             this.buttonBuscarEpp.Location = new System.Drawing.Point(80, 188);
-            this.buttonBuscarEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBuscarEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonBuscarEpp.Name = "buttonBuscarEpp";
             this.buttonBuscarEpp.Size = new System.Drawing.Size(61, 35);
             this.buttonBuscarEpp.TabIndex = 37;
@@ -712,7 +743,7 @@ namespace BracoProyectos
             // buttonEditEpp
             // 
             this.buttonEditEpp.Location = new System.Drawing.Point(145, 188);
-            this.buttonEditEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonEditEpp.Name = "buttonEditEpp";
             this.buttonEditEpp.Size = new System.Drawing.Size(61, 35);
             this.buttonEditEpp.TabIndex = 36;
@@ -722,7 +753,7 @@ namespace BracoProyectos
             // buttonCrearEpp
             // 
             this.buttonCrearEpp.Location = new System.Drawing.Point(14, 188);
-            this.buttonCrearEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCrearEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCrearEpp.Name = "buttonCrearEpp";
             this.buttonCrearEpp.Size = new System.Drawing.Size(61, 35);
             this.buttonCrearEpp.TabIndex = 33;
@@ -742,7 +773,7 @@ namespace BracoProyectos
             // textBoxCrearProveeEpp
             // 
             this.textBoxCrearProveeEpp.Location = new System.Drawing.Point(69, 114);
-            this.textBoxCrearProveeEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCrearProveeEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCrearProveeEpp.Name = "textBoxCrearProveeEpp";
             this.textBoxCrearProveeEpp.Size = new System.Drawing.Size(205, 20);
             this.textBoxCrearProveeEpp.TabIndex = 30;
@@ -750,7 +781,7 @@ namespace BracoProyectos
             // textBoxCodIngreEpp
             // 
             this.textBoxCodIngreEpp.Location = new System.Drawing.Point(381, 49);
-            this.textBoxCodIngreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodIngreEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCodIngreEpp.Name = "textBoxCodIngreEpp";
             this.textBoxCodIngreEpp.Size = new System.Drawing.Size(181, 20);
             this.textBoxCodIngreEpp.TabIndex = 34;
@@ -758,7 +789,7 @@ namespace BracoProyectos
             // textBoxNombreEpp
             // 
             this.textBoxNombreEpp.Location = new System.Drawing.Point(57, 79);
-            this.textBoxNombreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNombreEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNombreEpp.Name = "textBoxNombreEpp";
             this.textBoxNombreEpp.Size = new System.Drawing.Size(217, 20);
             this.textBoxNombreEpp.TabIndex = 28;
@@ -807,7 +838,7 @@ namespace BracoProyectos
             // 
             this.comboBoxIngreEppProvee.FormattingEnabled = true;
             this.comboBoxIngreEppProvee.Location = new System.Drawing.Point(355, 114);
-            this.comboBoxIngreEppProvee.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxIngreEppProvee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxIngreEppProvee.Name = "comboBoxIngreEppProvee";
             this.comboBoxIngreEppProvee.Size = new System.Drawing.Size(208, 21);
             this.comboBoxIngreEppProvee.TabIndex = 24;
@@ -815,7 +846,7 @@ namespace BracoProyectos
             // textBoxCodgEpp
             // 
             this.textBoxCodgEpp.Location = new System.Drawing.Point(90, 49);
-            this.textBoxCodgEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCodgEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCodgEpp.Name = "textBoxCodgEpp";
             this.textBoxCodgEpp.Size = new System.Drawing.Size(184, 20);
             this.textBoxCodgEpp.TabIndex = 20;
@@ -823,7 +854,7 @@ namespace BracoProyectos
             // textBoxNombFactIngreEpp
             // 
             this.textBoxNombFactIngreEpp.Location = new System.Drawing.Point(343, 150);
-            this.textBoxNombFactIngreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNombFactIngreEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNombFactIngreEpp.Name = "textBoxNombFactIngreEpp";
             this.textBoxNombFactIngreEpp.Size = new System.Drawing.Size(220, 20);
             this.textBoxNombFactIngreEpp.TabIndex = 31;
@@ -861,7 +892,7 @@ namespace BracoProyectos
             // buttonIngreEpp
             // 
             this.buttonIngreEpp.Location = new System.Drawing.Point(478, 188);
-            this.buttonIngreEpp.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonIngreEpp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonIngreEpp.Name = "buttonIngreEpp";
             this.buttonIngreEpp.Size = new System.Drawing.Size(83, 35);
             this.buttonIngreEpp.TabIndex = 27;
@@ -882,7 +913,7 @@ namespace BracoProyectos
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(342, 77);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(221, 21);
             this.comboBox3.TabIndex = 21;
@@ -890,15 +921,35 @@ namespace BracoProyectos
             // splitter2
             // 
             this.splitter2.Location = new System.Drawing.Point(2, 3);
-            this.splitter2.Margin = new System.Windows.Forms.Padding(2);
+            this.splitter2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(283, 238);
+            this.splitter2.Size = new System.Drawing.Size(283, 491);
             this.splitter2.TabIndex = 43;
             this.splitter2.TabStop = false;
             // 
             // tabPagePersonal
             // 
             this.tabPagePersonal.BackColor = System.Drawing.Color.Transparent;
+            this.tabPagePersonal.Controls.Add(this.buttonElimPers);
+            this.tabPagePersonal.Controls.Add(this.buttonActzPerso);
+            this.tabPagePersonal.Controls.Add(this.buttonBuscPers);
+            this.tabPagePersonal.Controls.Add(this.buttonCrearPers);
+            this.tabPagePersonal.Controls.Add(this.textBoxCelEmerg);
+            this.tabPagePersonal.Controls.Add(this.labelCelEmerg);
+            this.tabPagePersonal.Controls.Add(this.textBoxPersEmerg);
+            this.tabPagePersonal.Controls.Add(this.labelPersoEmerg);
+            this.tabPagePersonal.Controls.Add(this.textBoxRh);
+            this.tabPagePersonal.Controls.Add(this.labelRh);
+            this.tabPagePersonal.Controls.Add(this.labelFechaIngre);
+            this.tabPagePersonal.Controls.Add(this.dateTimePickerPersIngre);
+            this.tabPagePersonal.Controls.Add(this.textBoxDirec);
+            this.tabPagePersonal.Controls.Add(this.labelDirec);
+            this.tabPagePersonal.Controls.Add(this.textBoxCelular);
+            this.tabPagePersonal.Controls.Add(this.labelCel);
+            this.tabPagePersonal.Controls.Add(this.textBox2);
+            this.tabPagePersonal.Controls.Add(this.labelCargo);
+            this.tabPagePersonal.Controls.Add(this.textBoxDocument);
+            this.tabPagePersonal.Controls.Add(this.labelDocument);
             this.tabPagePersonal.Controls.Add(this.textBoxApelliEmp);
             this.tabPagePersonal.Controls.Add(this.label3);
             this.tabPagePersonal.Controls.Add(this.labelApelliPersonal);
@@ -907,34 +958,201 @@ namespace BracoProyectos
             this.tabPagePersonal.Location = new System.Drawing.Point(4, 22);
             this.tabPagePersonal.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tabPagePersonal.Name = "tabPagePersonal";
-            this.tabPagePersonal.Size = new System.Drawing.Size(572, 244);
+            this.tabPagePersonal.Size = new System.Drawing.Size(572, 497);
             this.tabPagePersonal.TabIndex = 3;
             this.tabPagePersonal.Text = "Personal";
+            this.tabPagePersonal.Click += new System.EventHandler(this.tabPagePersonal_Click);
             // 
-            // textBoxNomEmple
+            // buttonElimPers
             // 
-            this.textBoxNomEmple.Location = new System.Drawing.Point(69, 51);
-            this.textBoxNomEmple.Name = "textBoxNomEmple";
-            this.textBoxNomEmple.Size = new System.Drawing.Size(131, 20);
-            this.textBoxNomEmple.TabIndex = 0;
+            this.buttonElimPers.Location = new System.Drawing.Point(466, 200);
+            this.buttonElimPers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonElimPers.Name = "buttonElimPers";
+            this.buttonElimPers.Size = new System.Drawing.Size(83, 35);
+            this.buttonElimPers.TabIndex = 24;
+            this.buttonElimPers.Text = "Eliminar Personal";
+            this.buttonElimPers.UseVisualStyleBackColor = true;
             // 
-            // labelNomEmpl
+            // buttonActzPerso
             // 
-            this.labelNomEmpl.AutoSize = true;
-            this.labelNomEmpl.Location = new System.Drawing.Point(19, 54);
-            this.labelNomEmpl.Name = "labelNomEmpl";
-            this.labelNomEmpl.Size = new System.Drawing.Size(44, 13);
-            this.labelNomEmpl.TabIndex = 1;
-            this.labelNomEmpl.Text = "Nombre";
+            this.buttonActzPerso.Location = new System.Drawing.Point(328, 200);
+            this.buttonActzPerso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonActzPerso.Name = "buttonActzPerso";
+            this.buttonActzPerso.Size = new System.Drawing.Size(83, 35);
+            this.buttonActzPerso.TabIndex = 23;
+            this.buttonActzPerso.Text = "Actualizar Personal";
+            this.buttonActzPerso.UseVisualStyleBackColor = true;
             // 
-            // labelApelliPersonal
+            // buttonBuscPers
             // 
-            this.labelApelliPersonal.AutoSize = true;
-            this.labelApelliPersonal.Location = new System.Drawing.Point(220, 54);
-            this.labelApelliPersonal.Name = "labelApelliPersonal";
-            this.labelApelliPersonal.Size = new System.Drawing.Size(44, 13);
-            this.labelApelliPersonal.TabIndex = 2;
-            this.labelApelliPersonal.Text = "Apellido";
+            this.buttonBuscPers.Location = new System.Drawing.Point(170, 200);
+            this.buttonBuscPers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonBuscPers.Name = "buttonBuscPers";
+            this.buttonBuscPers.Size = new System.Drawing.Size(83, 35);
+            this.buttonBuscPers.TabIndex = 22;
+            this.buttonBuscPers.Text = "Buscar Personal";
+            this.buttonBuscPers.UseVisualStyleBackColor = true;
+            // 
+            // buttonCrearPers
+            // 
+            this.buttonCrearPers.Location = new System.Drawing.Point(25, 200);
+            this.buttonCrearPers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCrearPers.Name = "buttonCrearPers";
+            this.buttonCrearPers.Size = new System.Drawing.Size(83, 35);
+            this.buttonCrearPers.TabIndex = 21;
+            this.buttonCrearPers.Text = "Crear Personal";
+            this.buttonCrearPers.UseVisualStyleBackColor = true;
+            // 
+            // textBoxCelEmerg
+            // 
+            this.textBoxCelEmerg.Location = new System.Drawing.Point(401, 127);
+            this.textBoxCelEmerg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCelEmerg.Name = "textBoxCelEmerg";
+            this.textBoxCelEmerg.Size = new System.Drawing.Size(138, 20);
+            this.textBoxCelEmerg.TabIndex = 20;
+            // 
+            // labelCelEmerg
+            // 
+            this.labelCelEmerg.AutoSize = true;
+            this.labelCelEmerg.Location = new System.Drawing.Point(298, 127);
+            this.labelCelEmerg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCelEmerg.Name = "labelCelEmerg";
+            this.labelCelEmerg.Size = new System.Drawing.Size(98, 13);
+            this.labelCelEmerg.TabIndex = 19;
+            this.labelCelEmerg.Text = "Celular Emergencia";
+            // 
+            // textBoxPersEmerg
+            // 
+            this.textBoxPersEmerg.Location = new System.Drawing.Point(116, 124);
+            this.textBoxPersEmerg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPersEmerg.Name = "textBoxPersEmerg";
+            this.textBoxPersEmerg.Size = new System.Drawing.Size(172, 20);
+            this.textBoxPersEmerg.TabIndex = 18;
+            // 
+            // labelPersoEmerg
+            // 
+            this.labelPersoEmerg.AutoSize = true;
+            this.labelPersoEmerg.Location = new System.Drawing.Point(9, 124);
+            this.labelPersoEmerg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPersoEmerg.Name = "labelPersoEmerg";
+            this.labelPersoEmerg.Size = new System.Drawing.Size(101, 13);
+            this.labelPersoEmerg.TabIndex = 17;
+            this.labelPersoEmerg.Text = "Familiar Emergencia";
+            // 
+            // textBoxRh
+            // 
+            this.textBoxRh.Location = new System.Drawing.Point(421, 86);
+            this.textBoxRh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRh.Name = "textBoxRh";
+            this.textBoxRh.Size = new System.Drawing.Size(60, 20);
+            this.textBoxRh.TabIndex = 16;
+            // 
+            // labelRh
+            // 
+            this.labelRh.AutoSize = true;
+            this.labelRh.Location = new System.Drawing.Point(395, 89);
+            this.labelRh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelRh.Name = "labelRh";
+            this.labelRh.Size = new System.Drawing.Size(23, 13);
+            this.labelRh.TabIndex = 15;
+            this.labelRh.Text = "RH";
+            // 
+            // labelFechaIngre
+            // 
+            this.labelFechaIngre.AutoSize = true;
+            this.labelFechaIngre.Location = new System.Drawing.Point(197, 162);
+            this.labelFechaIngre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelFechaIngre.Name = "labelFechaIngre";
+            this.labelFechaIngre.Size = new System.Drawing.Size(75, 13);
+            this.labelFechaIngre.TabIndex = 14;
+            this.labelFechaIngre.Text = "Fecha Ingreso";
+            // 
+            // dateTimePickerPersIngre
+            // 
+            this.dateTimePickerPersIngre.Location = new System.Drawing.Point(275, 162);
+            this.dateTimePickerPersIngre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePickerPersIngre.Name = "dateTimePickerPersIngre";
+            this.dateTimePickerPersIngre.Size = new System.Drawing.Size(172, 20);
+            this.dateTimePickerPersIngre.TabIndex = 13;
+            // 
+            // textBoxDirec
+            // 
+            this.textBoxDirec.Location = new System.Drawing.Point(248, 87);
+            this.textBoxDirec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDirec.Name = "textBoxDirec";
+            this.textBoxDirec.Size = new System.Drawing.Size(138, 20);
+            this.textBoxDirec.TabIndex = 12;
+            // 
+            // labelDirec
+            // 
+            this.labelDirec.AutoSize = true;
+            this.labelDirec.Location = new System.Drawing.Point(197, 88);
+            this.labelDirec.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDirec.Name = "labelDirec";
+            this.labelDirec.Size = new System.Drawing.Size(52, 13);
+            this.labelDirec.TabIndex = 11;
+            this.labelDirec.Text = "Direccion";
+            // 
+            // textBoxCelular
+            // 
+            this.textBoxCelular.Location = new System.Drawing.Point(47, 85);
+            this.textBoxCelular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCelular.Name = "textBoxCelular";
+            this.textBoxCelular.Size = new System.Drawing.Size(143, 20);
+            this.textBoxCelular.TabIndex = 10;
+            // 
+            // labelCel
+            // 
+            this.labelCel.AutoSize = true;
+            this.labelCel.Location = new System.Drawing.Point(9, 86);
+            this.labelCel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCel.Name = "labelCel";
+            this.labelCel.Size = new System.Drawing.Size(39, 13);
+            this.labelCel.TabIndex = 9;
+            this.labelCel.Text = "Celular";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(47, 160);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(143, 20);
+            this.textBox2.TabIndex = 8;
+            // 
+            // labelCargo
+            // 
+            this.labelCargo.AutoSize = true;
+            this.labelCargo.Location = new System.Drawing.Point(9, 161);
+            this.labelCargo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCargo.Name = "labelCargo";
+            this.labelCargo.Size = new System.Drawing.Size(35, 13);
+            this.labelCargo.TabIndex = 7;
+            this.labelCargo.Text = "Cargo";
+            // 
+            // textBoxDocument
+            // 
+            this.textBoxDocument.Location = new System.Drawing.Point(458, 48);
+            this.textBoxDocument.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDocument.Name = "textBoxDocument";
+            this.textBoxDocument.Size = new System.Drawing.Size(109, 20);
+            this.textBoxDocument.TabIndex = 6;
+            // 
+            // labelDocument
+            // 
+            this.labelDocument.AutoSize = true;
+            this.labelDocument.Location = new System.Drawing.Point(394, 49);
+            this.labelDocument.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDocument.Name = "labelDocument";
+            this.labelDocument.Size = new System.Drawing.Size(62, 13);
+            this.labelDocument.TabIndex = 5;
+            this.labelDocument.Text = "Documento";
+            // 
+            // textBoxApelliEmp
+            // 
+            this.textBoxApelliEmp.Location = new System.Drawing.Point(248, 46);
+            this.textBoxApelliEmp.Name = "textBoxApelliEmp";
+            this.textBoxApelliEmp.Size = new System.Drawing.Size(138, 20);
+            this.textBoxApelliEmp.TabIndex = 4;
             // 
             // label3
             // 
@@ -945,18 +1163,72 @@ namespace BracoProyectos
             this.label3.TabIndex = 3;
             this.label3.Text = "INGRESO PERSONAL NUEVO";
             // 
-            // textBoxApelliEmp
+            // labelApelliPersonal
             // 
-            this.textBoxApelliEmp.Location = new System.Drawing.Point(271, 51);
-            this.textBoxApelliEmp.Name = "textBoxApelliEmp";
-            this.textBoxApelliEmp.Size = new System.Drawing.Size(138, 20);
-            this.textBoxApelliEmp.TabIndex = 4;
+            this.labelApelliPersonal.AutoSize = true;
+            this.labelApelliPersonal.Location = new System.Drawing.Point(197, 49);
+            this.labelApelliPersonal.Name = "labelApelliPersonal";
+            this.labelApelliPersonal.Size = new System.Drawing.Size(49, 13);
+            this.labelApelliPersonal.TabIndex = 2;
+            this.labelApelliPersonal.Text = "Apellidos";
+            // 
+            // labelNomEmpl
+            // 
+            this.labelNomEmpl.AutoSize = true;
+            this.labelNomEmpl.Location = new System.Drawing.Point(9, 49);
+            this.labelNomEmpl.Name = "labelNomEmpl";
+            this.labelNomEmpl.Size = new System.Drawing.Size(49, 13);
+            this.labelNomEmpl.TabIndex = 1;
+            this.labelNomEmpl.Text = "Nombres";
+            // 
+            // textBoxNomEmple
+            // 
+            this.textBoxNomEmple.Location = new System.Drawing.Point(59, 46);
+            this.textBoxNomEmple.Name = "textBoxNomEmple";
+            this.textBoxNomEmple.Size = new System.Drawing.Size(131, 20);
+            this.textBoxNomEmple.TabIndex = 0;
+            // 
+            // textBoxValorProyec
+            // 
+            this.textBoxValorProyec.Location = new System.Drawing.Point(469, 55);
+            this.textBoxValorProyec.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBoxValorProyec.Name = "textBoxValorProyec";
+            this.textBoxValorProyec.Size = new System.Drawing.Size(85, 20);
+            this.textBoxValorProyec.TabIndex = 19;
+            // 
+            // labelValorProyec
+            // 
+            this.labelValorProyec.AutoSize = true;
+            this.labelValorProyec.Location = new System.Drawing.Point(435, 58);
+            this.labelValorProyec.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelValorProyec.Name = "labelValorProyec";
+            this.labelValorProyec.Size = new System.Drawing.Size(31, 13);
+            this.labelValorProyec.TabIndex = 18;
+            this.labelValorProyec.Text = "Valor";
+            // 
+            // listBoxlistProyec
+            // 
+            this.listBoxlistProyec.FormattingEnabled = true;
+            this.listBoxlistProyec.Location = new System.Drawing.Point(5, 242);
+            this.listBoxlistProyec.Name = "listBoxlistProyec";
+            this.listBoxlistProyec.Size = new System.Drawing.Size(562, 251);
+            this.listBoxlistProyec.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(230, 20);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 13);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "PROYECTO A CREAR";
             // 
             // BracoProyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 276);
+            this.ClientSize = new System.Drawing.Size(584, 533);
             this.Controls.Add(this.tabControlProyecto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -989,7 +1261,7 @@ namespace BracoProyectos
         private System.Windows.Forms.ComboBox comboBoxProduc;
         private System.Windows.Forms.Label labelProduc;
         private System.Windows.Forms.Label labelFechaInicio;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerIngreProyec;
         private System.Windows.Forms.TextBox textBoxCantFabricar;
         private System.Windows.Forms.Label labelCantFabricar;
         private System.Windows.Forms.TextBox textBoxOrdenCompra;
@@ -1059,6 +1331,30 @@ namespace BracoProyectos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelApelliPersonal;
         private System.Windows.Forms.Label labelNomEmpl;
+        private System.Windows.Forms.TextBox textBoxDocument;
+        private System.Windows.Forms.Label labelDocument;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelCargo;
+        private System.Windows.Forms.TextBox textBoxCelular;
+        private System.Windows.Forms.Label labelCel;
+        private System.Windows.Forms.TextBox textBoxDirec;
+        private System.Windows.Forms.Label labelDirec;
+        private System.Windows.Forms.Label labelFechaIngre;
+        private System.Windows.Forms.DateTimePicker dateTimePickerPersIngre;
+        private System.Windows.Forms.TextBox textBoxRh;
+        private System.Windows.Forms.Label labelRh;
+        private System.Windows.Forms.TextBox textBoxCelEmerg;
+        private System.Windows.Forms.Label labelCelEmerg;
+        private System.Windows.Forms.TextBox textBoxPersEmerg;
+        private System.Windows.Forms.Label labelPersoEmerg;
+        private System.Windows.Forms.Button buttonElimPers;
+        private System.Windows.Forms.Button buttonActzPerso;
+        private System.Windows.Forms.Button buttonBuscPers;
+        private System.Windows.Forms.Button buttonCrearPers;
+        private System.Windows.Forms.TextBox textBoxValorProyec;
+        private System.Windows.Forms.Label labelValorProyec;
+        private System.Windows.Forms.ListBox listBoxlistProyec;
+        private System.Windows.Forms.Label label4;
     }
 }
 

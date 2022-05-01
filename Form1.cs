@@ -46,5 +46,59 @@ namespace BracoProyectos
         {
 
         }
+
+        private void tabPagePersonal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        List<string> ListaProyectos = new List<string>();
+
+        private void buttonCrearProyec_Click(object sender, EventArgs e)
+        {
+            string OT;
+            string OC;
+            string Cliente;
+            string Valor;
+            string Producto;
+            string Descripcion;
+            string Cantidad;
+
+            OT = textBoxOT.Text;
+            OC = textBoxOrdenCompra.Text;
+            Cliente = comboBoxCliente.Text;
+            Valor = textBoxValorProyec.Text;
+            Producto = comboBoxProduc.Text;
+            Descripcion = textBoxDescripProyec.Text;
+            Cantidad = textBoxCantFabricar.Text;
+
+            ListaProyectos.Add(OT);
+            ListaProyectos.Add(OC);
+            ListaProyectos.Add(Cliente);
+            ListaProyectos.Add(Valor);
+            ListaProyectos.Add(Producto);
+            ListaProyectos.Add(Descripcion);
+            ListaProyectos.Add(Cantidad);
+
+            listBoxlistProyec.DataSource = null;
+            listBoxlistProyec.DataSource = ListaProyectos;
+        }
+
+        private void tabPageProyecto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonActualizarProyec_Click(object sender, EventArgs e)
+        {
+            var OrdenTrabajo = ListaProyectos.IndexOf(textBoxOT.Text);
+            ListaProyectos.RemoveAt(OrdenTrabajo);
+            ListaProyectos.Insert(OrdenTrabajo, textBoxOrdenCompra.Text);
+
+            listBoxlistProyec.DataSource = null;
+            listBoxlistProyec.DataSource = ListaProyectos;
+
+
+        }
     }
 }
